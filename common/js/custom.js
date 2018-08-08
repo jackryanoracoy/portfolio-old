@@ -6,7 +6,7 @@ $(function () { objectFitImages() });
 
 // Immersive
 $(document).ready(function($) {
-  var lastScroll = 0;
+  var lastScroll = 100;
     $(window).scroll(function(){
     setTimeout(function() {
       var scroll = $(window).scrollTop();
