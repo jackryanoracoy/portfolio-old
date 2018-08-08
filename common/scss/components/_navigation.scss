@@ -1,0 +1,136 @@
+/*--------------------------------------------------
+  navigation
+--------------------------------------------------*/
+
+@mixin navigation($extend: true) {
+  @if $extend {
+    @extend %navigation;
+  } @else {
+    & {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      font-family: $font-family-condensed;
+    }
+
+    & a {
+      display: block;
+      padding: 0 10px;
+      color: $default-color;
+      line-height: $navigation-height;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    &:hover a { 
+      opacity: 0.35;
+      transition: all 200ms linear;
+    }
+
+    &:hover a.active { 
+      color: $primary-color;
+      opacity: 1;
+    }
+
+    & a:hover { opacity: 1; }
+  }
+}
+  
+%navigation { @include navigation($extend: false); }
+
+.main-nav { 
+  @include navigation;
+
+  & a {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.quick-nav {
+  @include navigation; 
+
+  & a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.social-nav { 
+  @include navigation; 
+
+  & li {
+    width: 32px;
+    height: 32px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  & a {
+    padding: 0;
+    line-height: 32px;
+    font-size: 1.8rem;
+    background-color: transparent;
+    border-radius: 50%;
+  }
+
+  & a:hover {
+    background-color: #F5F5F5;
+    box-shadow: $z-depth-2;
+  }
+
+  & a.gh:hover { color: #424242; }
+
+  & a.fb:hover { color: #3F51B5; }
+
+  & a.tw:hover { color: #03A9F4; }
+
+  & a.in:hover { color: #2196F3; }
+
+  & a.be:hover { color: #0057ff; }
+}
+
+@media only screen and (min-width: $media-medium + 1) {
+  .social-nav {
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: $media-medium) {
+  .main-nav { 
+    flex-wrap: wrap;
+    padding: 10px 0;
+
+    & li { width: 100%; }
+
+    & a {
+      padding: 0 45px;
+      font-size: 1.6rem;
+      line-height: 3;
+    }
+  }
+
+  .quick-nav { 
+    flex-wrap: wrap;
+    padding: 10px 0;
+
+    & li { width: 100%; }
+
+    & a {
+      padding: 0 45px;
+      font-size: 1.6rem;
+      line-height: 3;
+    }
+  }
+
+  .social-nav {
+    justify-content: space-around;
+    height: 50px;
+    border-top: 1px solid #EEE;
+
+    // & li { margin: auto; }
+  }
+}

@@ -1,0 +1,166 @@
+/*--------------------------------------------------
+  menu-btn
+--------------------------------------------------*/
+
+@mixin menu-btn($extend: true) {
+  @if $extend {
+    @extend %menu-btn;
+  } @else {
+    & {
+      position: relative;
+      display: block;
+      width: 35px;
+      height: 35px;
+      padding: 5px;
+      color: $grey-50;
+      font-size: 1rem;
+      text-align: center;
+      text-decoration: none;
+      text-transform: lowercase;
+    }
+    
+    & .menu-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+    }
+    
+    & .menu-inner {
+      position: relative;
+      display: block;
+      width: inherit;
+      height: 3px;
+      background: $grey-50;
+    }
+    
+    & .menu-inner::after,
+    & .menu-inner::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: $grey-50;
+      transition: all 120ms linear;
+    }
+    
+    & .menu-inner::before {
+      top: -8px;
+    }
+    
+    & .menu-inner::after {
+      bottom: -8px;
+    }
+    
+    &.active .menu-inner {
+      background: rgba(0, 0, 0, 0);
+    }
+    
+    &.active .menu-inner::before {
+      top: 0;
+      transform: rotate(-40deg);
+    }
+    
+    &.active .menu-inner::after {
+      bottom: 0;
+      transform: rotate(40deg);
+    }
+  }
+}
+
+%menu-btn { @include menu-btn($extend: false); }
+
+.menu-btn { @include menu-btn; }
+
+/*--------------------------------------------------
+  btn
+--------------------------------------------------*/
+
+@mixin btn($extend: true) {
+  @if $extend {
+    @extend %btn;
+  } @else {
+    & {
+      display: inline-block;
+      padding: 0 30px;
+      color: $button-text-color;
+      font-size: 1.5rem;
+      line-height: 5rem;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 25px;
+      background: $gradient-color;
+      box-shadow: $z-depth;
+      white-space: nowrap;
+    }
+
+    &:hover { box-shadow: $z-depth-2; }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited { color: $button-text-color; }
+  }
+}
+  
+%btn { @include btn($extend: false); }
+
+.btn { 
+  @include btn;
+
+  &.alt1 {
+    color: $button-text-color-alt-1;
+    background: $button-color-alt-1;
+  }
+
+  &.alt2 { 
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: $media-medium) {
+  .btn.cta { 
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
+}
+
+/*--------------------------------------------------
+  btn-more, btn-all
+--------------------------------------------------*/
+
+@mixin btn-more($extend: true) {
+  @if $extend {
+    @extend %btn-more;
+  } @else {
+    & {
+      color: inherit !important;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    
+    &::after {
+      content: " \f061";
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+    }
+  
+    &:hover { text-decoration: underline; }
+  }
+}
+  
+%btn-more { @include btn-more($extend: false); }
+
+.btn-more { @include btn-more; }
+
+
+.btn-all { 
+  @include btn-more; 
+
+  &::after { content: " \f054"; }
+}
