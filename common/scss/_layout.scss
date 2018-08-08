@@ -228,22 +228,6 @@
 
     & .slides {
       display: none;
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 300ms;
-      animation-name: fade;
-      animation-duration: 300ms;
-    }
-
-    @at-root {
-      @-webkit-keyframes fade {
-        from { opacity: 0.8 } 
-        to { opacity: 1 }
-      }
-      
-      @keyframes fade {
-        from { opacity: 0.8 } 
-        to { opacity: 1 }
-      }
     }
   }
 }

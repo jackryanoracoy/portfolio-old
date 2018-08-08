@@ -15,6 +15,11 @@
   text-size-adjust: $text-size;
 }
 
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @mixin img-render-crisp {
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
