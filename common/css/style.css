@@ -1642,7 +1642,7 @@ div.card-cluster {
   width: 100%;
   height: 60px;
   padding: 0 10px;
-  background: linear-gradient(to bottom right, #F44336, #FF1744);
+  background: #F44336;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
   transition: all 120ms ease-in-out;
   z-index: 1;
