@@ -102,7 +102,7 @@
     right: 10px;
     transition: bottom 200ms ease-in-out 500ms;
 
-    &.show { bottom: 10px; }
+    &.show { bottom: 20px; }
   }
 }
 
@@ -192,7 +192,7 @@
     right: 0;
     content: "";
     background: url(../../images/background-atf.png) no-repeat;
-    background-position: -300px 0;
+    background-position: 70% 0;
   }
 
   &::after {
@@ -242,7 +242,11 @@
 @media only screen and (min-width: $media-small + 1) {
   .site-atf {
     & .atf-about { width: 300px; }
-    & .atf-illus { width: calc(100% - 300px); }
+    & .atf-illus {
+      width: calc(100% - 300px);
+      
+      & img { height: 300px; }
+    }
   }
 }
 
@@ -251,7 +255,7 @@
     height: $header-height + $navigation-height + 500px;
     padding: $header-height + $navigation-height 20px 0;
 
-    &::before { background-position: -300px $header-height; }
+    &::before { background-position: 80% $header-height; }
 
     & .atf-about { width: 550px; }
 
@@ -259,7 +263,7 @@
       justify-content: center;
       width: calc(100% - 550px); 
 
-      & img { height: auto; }
+      & img { height: 400px; }
     }
   }
 }

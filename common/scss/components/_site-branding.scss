@@ -37,9 +37,9 @@
         letter-spacing: 0.1rem;
       }
     
-      & img { 
+      & img {
         max-width: 100%;
-        max-height: $header-height_m - 10px;
+        max-height: $header-height - 5px;
       }
     }
   }
@@ -60,8 +60,6 @@
     }
   
     & h1 span { color: #555; }
-
-    & img { max-height: $header-height; }
   }
 }
 

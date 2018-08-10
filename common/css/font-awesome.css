@@ -2,8 +2,8 @@
  font-awesome
 --------------------------------------------------------------*/
 
-@import url(../font-awesome/css/fontawesome-all.css);
-@import url(../font-awesome/css/fontawesome.css);
-@import url(../font-awesome/css/fa-brands.css);
-@import url(../font-awesome/css/fa-regular.css);
-@import url(../font-awesome/css/fa-solid.css);
+@import url(../font-awesome/css/fontawesome-all.min.css);
+@import url(../font-awesome/css/fontawesome.min.css);
+@import url(../font-awesome/css/fa-brands.min.css);
+@import url(../font-awesome/css/fa-regular.min.css);
+@import url(../font-awesome/css/fa-solid.min.css);

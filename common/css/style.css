@@ -1020,7 +1020,7 @@ textarea {
 }
 .site-branding img {
   max-width: 100%;
-  max-height: 50px;
+  max-height: 75px;
 }
 
 @media only screen and (min-width: 993px) {
@@ -1033,9 +1033,6 @@ textarea {
   }
   .site-branding h1 span {
     color: #555;
-  }
-  .site-branding img {
-    max-height: 80px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -1355,7 +1352,15 @@ textarea {
 .footer-text {
   font-size: 1rem;
 }
+.footer-text a {
+  text-decoration: none;
+}
 
+@media only screen and (min-width: 993px) {
+  .footer-text {
+    font-size: 1.2rem;
+  }
+}
 /*--------------------------------------------------
   menu-btn
 --------------------------------------------------*/
@@ -1553,13 +1558,13 @@ div.card-cluster {
   height: 150px;
   resize: none;
 }
-.contact-form input[type=text], .contact-form input[type=email] {
+.contact-form input[type=text], .contact-form input[type=email], .contact-form input[type=number] {
   width: 100%;
   height: 50px;
 }
-.contact-form textarea, .contact-form input[type=text], .contact-form input[type=email] {
+.contact-form textarea, .contact-form input[type=text], .contact-form input[type=email], .contact-form input[type=number] {
   margin: 0 0 20px;
-  padding: 20px 10px;
+  padding: 10px;
   font-size: 1.5rem;
   font-family: inherit;
   background-color: #FAFAFA;
@@ -1568,7 +1573,7 @@ div.card-cluster {
 .contact-form button, .contact-form input[type=button], .contact-form input[type=submit] {
   border: none;
 }
-.contact-form button, .contact-form textarea, .contact-form input[type=text], .contact-form input[type=email], .contact-form input[type=button], .contact-form input[type=submit] {
+.contact-form button, .contact-form textarea, .contact-form input[type=text], .contact-form input[type=email], .contact-form input[type=button], .contact-form input[type=number], .contact-form input[type=submit] {
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -1585,11 +1590,23 @@ div.card-cluster {
 .contact-form .submit-container .contact-note {
   align-self: center;
 }
+.contact-form .thankyou-message {
+  margin: 0 0 40px;
+  padding: 15px 20px 15px 40px;
+  color: #FFF;
+  text-indent: -0.95rem;
+  background-color: #4CAF50;
+  border: 1px solid #EEE;
+  border-radius: 4px;
+}
+.contact-form #honeypot {
+  display: none;
+}
 
 @media only screen and (min-width: 993px) {
   .contact-form textarea, .contact-form input[type=text], .contact-form input[type=email] {
     margin: 0 0 40px;
-    padding: 20px;
+    padding: 10px 20px;
   }
 }
 /*--------------------------------------------------
@@ -1692,7 +1709,7 @@ div.card-cluster {
     transition: bottom 200ms ease-in-out 500ms;
   }
   .site-cta.show {
-    bottom: 10px;
+    bottom: 20px;
   }
 }
 /*--------------------------------------------------
@@ -1777,7 +1794,7 @@ div.card-cluster {
   right: 0;
   content: "";
   background: url(../../images/background-atf.png) no-repeat;
-  background-position: -300px 0;
+  background-position: 70% 0;
 }
 .site-atf::after {
   position: absolute;
@@ -1827,6 +1844,9 @@ div.card-cluster {
   .site-atf .atf-illus {
     width: calc(100% - 300px);
   }
+  .site-atf .atf-illus img {
+    height: 300px;
+  }
 }
 @media only screen and (min-width: 993px) {
   .site-atf {
@@ -1834,7 +1854,7 @@ div.card-cluster {
     padding: 160px 20px 0;
   }
   .site-atf::before {
-    background-position: -300px 80px;
+    background-position: 80% 80px;
   }
   .site-atf .atf-about {
     width: 550px;
@@ -1844,7 +1864,7 @@ div.card-cluster {
     width: calc(100% - 550px);
   }
   .site-atf .atf-illus img {
-    height: auto;
+    height: 400px;
   }
 }
 @media only screen and (min-width: 1301px) {
