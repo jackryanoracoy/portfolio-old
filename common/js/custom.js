@@ -4,6 +4,9 @@ document.createElement('main');
 // Object-Fit
 $(function () { objectFitImages() });
 
+// Add target="_blank"
+$('a[href^="http://"], a[href^="https://"]').attr('target','_blank');
+
 // Immersive
 $(document).ready(function($) {
   var lastScroll = 100;

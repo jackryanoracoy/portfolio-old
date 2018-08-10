@@ -1341,11 +1341,6 @@ textarea {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 400px) {
-  .footer-title a {
-    display: block;
-  }
-}
 /*--------------------------------------------------
   footer-text
 --------------------------------------------------*/
