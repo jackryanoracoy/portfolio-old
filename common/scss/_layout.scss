@@ -28,7 +28,6 @@
 
     &.active { height: $header-height; }
 
-    &.active:hover,
     &.active.show { height: $header-height + $navigation-height; }
   }
 }
@@ -36,8 +35,7 @@
 @media only screen and (max-width: $media-medium) {
   .header-section {
     &.active { top: -$header-height; }
-
-    &.active:hover,
+    
     &.active.show,
     &.menu-opened { top: 0 !important; }
   }

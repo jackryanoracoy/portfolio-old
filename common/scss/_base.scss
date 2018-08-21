@@ -14,7 +14,7 @@ html {
 }
 
 /*--------------------------------------------------
-  Reset
+  Global
 --------------------------------------------------*/
 
 *, 
@@ -22,6 +22,20 @@ html {
 *:after {
   @include ua-pad-mar-reset;
   @include box-sizing(inherit);
+}
+
+/*--------------------------------------------------
+  Outline
+--------------------------------------------------*/
+
+*:focus {
+  outline: 1px dashed $default-color;
+
+  @at-root {
+    body:not(.tab-used ) *:focus {
+      outline: none;
+    }
+  }
 }
 
 /*--------------------------------------------------
@@ -33,6 +47,16 @@ body {
   color: $default-color;
   font-size: $default-size;
   font-family: $font-family;
+
+  & ::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+    background-color: $grey-100;
+  }
+  
+  & ::-webkit-scrollbar-thumb {
+    background-color: $grey-400;
+  }
 }
 
 /*--------------------------------------------------

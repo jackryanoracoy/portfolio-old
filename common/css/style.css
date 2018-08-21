@@ -18,7 +18,7 @@ html {
 }
 
 /*--------------------------------------------------
-  Reset
+  Global
 --------------------------------------------------*/
 *,
 *:before,
@@ -31,6 +31,16 @@ html {
 }
 
 /*--------------------------------------------------
+  Outline
+--------------------------------------------------*/
+*:focus {
+  outline: 1px dashed #555;
+}
+body:not(.tab-used) *:focus {
+  outline: none;
+}
+
+/*--------------------------------------------------
   Body
 --------------------------------------------------*/
 body {
@@ -38,6 +48,14 @@ body {
   color: #555;
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
+}
+body ::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background-color: #F5F5F5;
+}
+body ::-webkit-scrollbar-thumb {
+  background-color: #BDBDBD;
 }
 
 /*--------------------------------------------------
@@ -983,7 +1001,7 @@ textarea {
   content: "";
   background-color: rgba(255, 255, 255, 0.2);
 }
-.filter > div {
+.filter > * {
   position: inherit;
   z-index: 1;
 }
@@ -1633,7 +1651,7 @@ div.card-cluster {
   .header-section.active {
     height: 80px;
   }
-  .header-section.active:hover, .header-section.active.show {
+  .header-section.active.show {
     height: 160px;
   }
 }
@@ -1641,7 +1659,7 @@ div.card-cluster {
   .header-section.active {
     top: -80px;
   }
-  .header-section.active:hover, .header-section.active.show, .header-section.menu-opened {
+  .header-section.active.show, .header-section.menu-opened {
     top: 0 !important;
   }
 }

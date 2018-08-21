@@ -38,7 +38,7 @@ $(document).ready(function($) {
 
 //Remove class "show" (Time interval)
 $(document).ready(function($) {
-  var $removeShow = $(".header-section, .site-cta");
+  var $removeShow = $(".site-cta");
   setInterval(function() {
     $removeShow.removeClass("show");
   }, 5000);
@@ -65,3 +65,12 @@ $(document).ready(function($) {
     }
   });
 });
+
+// Detect if user is using TAB to navigate
+function handleFirstTab(e) {
+  if (e.keyCode === 9) {
+    document.body.classList.add('tab-used');
+    window.removeEventListener('keydown', handleFirstTab);
+  }
+}
+window.addEventListener('keydown', handleFirstTab);
