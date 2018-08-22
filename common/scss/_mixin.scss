@@ -12,7 +12,6 @@
 @mixin text-size-adjust($text-size) {
   -ms-text-size-adjust: $text-size;
   -webkit-text-size-adjust: $text-size;
-  text-size-adjust: $text-size;
 }
 
 @mixin font-smoothing {
