@@ -22,14 +22,14 @@
         opacity: 0.85;
       }
 
-      & h1 {
+      & h1, h5 {
         margin-left: 10px;
         color: inherit;
         font-size: 2.5rem;
         line-height: 1;
       }
 
-      & h1 small {
+      & h1 small, h5 small {
         display: block;
         color: $grey-500;
         font-size: $small-size;
@@ -59,14 +59,14 @@
       color: $primary-color;
     }
   
-    & h1 span { color: #555; }
+    & h1 span, h5 span { color: #555; }
   }
 }
 
 @media only screen and (max-width: $media-medium) {
   .site-branding {
-    & h1 { margin: 0; }
-    & h1 small { display: none; }
+    & h1, h5 { margin: 0; }
+    & h1 small, h5 small { display: none; }
     & img { display: none; }
   } 
 }

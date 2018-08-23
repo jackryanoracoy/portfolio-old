@@ -1079,13 +1079,13 @@ textarea {
   color: #FAFAFA;
   opacity: 0.85;
 }
-.site-branding h1 {
+.site-branding h1, .site-branding h5 {
   margin-left: 10px;
   color: inherit;
   font-size: 2.5rem;
   line-height: 1;
 }
-.site-branding h1 small {
+.site-branding h1 small, .site-branding h5 small {
   display: block;
   color: #999999;
   font-size: 1.2rem;
@@ -1105,15 +1105,15 @@ textarea {
   .site-branding:hover, .site-branding:visited {
     color: #F44336;
   }
-  .site-branding h1 span {
+  .site-branding h1 span, .site-branding h5 span {
     color: #555;
   }
 }
 @media only screen and (max-width: 992px) {
-  .site-branding h1 {
+  .site-branding h1, .site-branding h5 {
     margin: 0;
   }
-  .site-branding h1 small {
+  .site-branding h1 small, .site-branding h5 small {
     display: none;
   }
   .site-branding img {
@@ -1233,7 +1233,36 @@ textarea {
     border-top: 1px solid #EEE;
   }
 }
-.section-title, .heading-title, .heading-title.sub, .heading-title.sub2, .atf-heading, .portfolio-info .title-entry {
+/*--------------------------------------------------
+  breadcrumbs
+--------------------------------------------------*/
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  color: #F5F5F5;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0.5;
+}
+.breadcrumbs li:not(:first-child)::before {
+  margin: 0 5px;
+  content: "\f054";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+.breadcrumbs a {
+  color: inherit;
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------
+  Title
+--------------------------------------------------*/
+.section-title, .heading-title, .heading-title.sub, .heading-title.sub2, .headline-heading, .atf-heading, .portfolio-info .title-entry {
   color: #555;
   font-size: 1.8rem;
   font-family: "Roboto Condensed", sans-serif;
@@ -1241,17 +1270,11 @@ textarea {
   line-height: 1.5;
 }
 
-/*--------------------------------------------------
-  section-title
---------------------------------------------------*/
 @media only screen and (min-width: 993px) {
   .section-title {
     font-size: 2.5rem;
   }
 }
-/*--------------------------------------------------
-  heading-title
---------------------------------------------------*/
 .heading-title {
   padding: 0 0 10px;
   margin: 0 0 40px;
@@ -1270,6 +1293,22 @@ textarea {
   margin: 0 0 20px;
 }
 
+/*--------------------------------------------------
+  headline-heading
+--------------------------------------------------*/
+.headline-heading {
+  color: #FFF;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 993px) {
+  .headline-heading {
+    font-size: 2.5rem;
+  }
+}
 /*--------------------------------------------------
   atf-heading
 --------------------------------------------------*/
@@ -1290,11 +1329,6 @@ textarea {
 @media only screen and (min-width: 993px) {
   .atf-heading {
     font-size: 2.5rem;
-  }
-  .atf-heading a::before {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    letter-spacing: 2rem;
   }
 }
 /*--------------------------------------------------
@@ -1579,28 +1613,28 @@ div.card-cluster {
 }
 
 /*--------------------------------------------------
-  List
+  more-social, category-list
 --------------------------------------------------*/
-.more-social, .site-map {
+.more-social, .category-list {
   list-style: none;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1;
 }
-.more-social li, .site-map li {
+.more-social li, .category-list li {
   margin: 0 0 10px;
 }
-.more-social li:last-child, .site-map li:last-child {
+.more-social li:last-child, .category-list li:last-child {
   margin: 0;
 }
-.more-social h1, .site-map h1, .more-social h2, .site-map h2, .more-social h3, .site-map h3, .more-social h4, .site-map h4, .more-social h5, .site-map h5, .more-social h6, .site-map h6 {
+.more-social h1, .category-list h1, .more-social h2, .category-list h2, .more-social h3, .category-list h3, .more-social h4, .category-list h4, .more-social h5, .category-list h5, .more-social h6, .category-list h6 {
   font-size: 1.5rem;
 }
-.more-social a, .site-map a {
+.more-social a, .category-list a {
   color: inherit;
   text-decoration: none;
 }
-.more-social a:hover, .site-map a:hover {
+.more-social a:hover, .category-list a:hover {
   opacity: 0.75;
   text-decoration: none;
 }
@@ -1950,6 +1984,54 @@ div.card-cluster {
   }
 }
 /*--------------------------------------------------
+  site-headline
+--------------------------------------------------*/
+.site-headline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 180px;
+  padding: 60px 10px 10px;
+  color: #FFF;
+  background: linear-gradient(to bottom right, #F44336, #FF1744);
+  overflow: hidden;
+}
+.site-headline::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.site-headline .headline-title, .site-headline .headline-nav {
+  position: relative;
+  z-index: 1;
+}
+.site-headline .headline-title {
+  margin: auto 0;
+}
+
+@media only screen and (min-width: 993px) {
+  .site-headline {
+    height: 310px;
+    padding: 160px 20px 20px;
+  }
+}
+@media only screen and (min-width: 1301px) {
+  .site-headline {
+    padding: 160px 30px 20px;
+  }
+}
+@media only screen and (min-width: 1381px) {
+  .site-headline {
+    padding: 160px 50px 20px;
+  }
+}
+/*--------------------------------------------------
   site_aside
 --------------------------------------------------*/
 .site-aside {
@@ -2004,12 +2086,12 @@ div.card-cluster {
 
 @media only screen and (min-width: 993px) {
   .section {
-    padding: 50px 20px 50px;
+    padding: 50px 20px;
   }
 }
 @media only screen and (min-width: 1301px) {
   .section {
-    padding: 50px 30px 50px;
+    padding: 50px 30px;
   }
 }
 /*--------------------------------------------------
@@ -2035,6 +2117,32 @@ div.card-cluster {
   margin-left: auto;
 }
 
+/*--------------------------------------------------
+  title-bar-invisible
+--------------------------------------------------*/
+.title-bar-invisible {
+  display: none;
+  padding: 0 10px 20px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.title-bar-invisible:target {
+  display: block;
+}
+.title-bar-invisible h2, .title-bar-invisible h3, .title-bar-invisible h4, .title-bar-invisible h5, .title-bar-invisible h6 {
+  color: #F44336;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 993px) {
+  .title-bar-invisible {
+    padding: 0 20px 20px;
+  }
+}
+@media only screen and (min-width: 1301px) {
+  .title-bar-invisible {
+    padding: 0 30px 20px;
+  }
+}
 /*--------------------------------------------------
   portfolio-items
 --------------------------------------------------*/
@@ -2096,19 +2204,30 @@ div.card-cluster {
 }
 
 @media only screen and (min-width: 401px) {
+  .portfolio-items.first-feat .portfolio-item:first-child {
+    width: 100%;
+  }
   .portfolio-items .portfolio-item {
     width: 50%;
   }
 }
 @media only screen and (min-width: 601px) {
+  .portfolio-items.first-feat .portfolio-item:first-child {
+    width: 66.66%;
+  }
   .portfolio-items .portfolio-item {
     width: 33.33%;
   }
 }
 @media only screen and (min-width: 993px) {
   .portfolio-items {
-    height: 310px;
     overflow: hidden;
+  }
+  .portfolio-items.limited {
+    height: 310px;
+  }
+  .portfolio-items.first-feat .portfolio-item:first-child {
+    width: 50%;
   }
   .portfolio-items .portfolio-item {
     width: 25%;
@@ -2124,6 +2243,9 @@ div.card-cluster {
   }
 }
 @media only screen and (min-width: 1301px) {
+  .portfolio-items.first-feat .portfolio-item:first-child {
+    width: 40%;
+  }
   .portfolio-items .portfolio-item {
     width: 20%;
   }
@@ -2302,6 +2424,10 @@ div.card-cluster {
   padding: 40px 10px 50px;
   text-align: center;
   border-bottom: 1px solid #E0E0E0;
+}
+section:last-child .button-holder {
+  border: none;
+  padding-bottom: 0;
 }
 
 /*--------------------------------------------------

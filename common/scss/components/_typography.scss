@@ -1,3 +1,6 @@
+/*--------------------------------------------------
+  Title
+--------------------------------------------------*/
 
 @mixin title($extend: true) {
   @if $extend {
@@ -15,10 +18,6 @@
 
 %title { @include title($extend: false); }
 
-/*--------------------------------------------------
-  section-title
---------------------------------------------------*/
-
 .section-title {
   @include title;
 }
@@ -28,10 +27,6 @@
     font-size: $extra-large-size;
   }
 }
-
-/*--------------------------------------------------
-  heading-title
---------------------------------------------------*/
 
 .heading-title {
   @include title;
@@ -52,6 +47,25 @@
   font-size: $medium-size;
   border-color: #EEE;
   margin: 0 0 20px;
+}
+
+/*--------------------------------------------------
+  headline-heading
+--------------------------------------------------*/
+
+.headline-heading {
+  @include title;
+  color: $white;
+  font-size: $large-size;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 2px 2px rgba($color: #000, $alpha: 0.2);
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: $media-medium + 1) {
+  .headline-heading {
+    font-size:$extra-large-size;
+  }
 }
 
 /*--------------------------------------------------
@@ -77,24 +91,6 @@
 @media only screen and (min-width: $media-medium + 1) {
   .atf-heading {
     font-size:$extra-large-size;
-
-    & a::before {
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      letter-spacing: 2rem;
-    }
-
-    // & a.design::before {
-    //   content: "\f1fc";
-    // }
-
-    // & a.code::before {
-    //   content: "\f121";
-    // }
-
-    // & a.outsource::before {
-    //   content: "\f2b5";
-    // }
   }
 }
 

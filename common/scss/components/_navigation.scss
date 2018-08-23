@@ -134,3 +134,43 @@
     // & li { margin: auto; }
   }
 }
+
+/*--------------------------------------------------
+  breadcrumbs
+--------------------------------------------------*/
+
+@mixin breadcrumbs($extend: true) {
+  @if $extend {
+    @extend %breadcrumbs;
+  } @else {
+    & {
+      display: flex;
+      list-style: none;
+      color: $grey-100;
+      font-size: $default-size;
+      font-weight: 400;
+      line-height: 1;
+      opacity: 0.5;
+
+      & li:not(:first-child)::before {
+        margin: 0 5px;
+        content: "\f054";
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+      }
+      
+      & a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      & a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+%breadcrumbs { @include breadcrumbs($extend: false); }
+
+.breadcrumbs { @include breadcrumbs; }

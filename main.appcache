@@ -1,10 +1,17 @@
 CACHE MANIFEST
 
-# Cache manifest version 1.0.5
+# Cache manifest version 1.0.6
 
 CACHE:
 
 index.html
+
+portfolio/index.html
+portfolio/branding-design/index.html
+portfolio/featured/index.html
+portfolio/graphic-design/index.html
+portfolio/web-design/index.html
+portfolio/web-development/index.html
 
 common/css/style.min.css
 

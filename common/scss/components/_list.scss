@@ -1,5 +1,5 @@
 /*--------------------------------------------------
-  List
+  more-social, category-list
 --------------------------------------------------*/
 
 @mixin list($extend: true) {
@@ -37,6 +37,4 @@
 
 .more-social { @include list; }
 
-.site-map { @include list; }
-
-
+.category-list { @include list; }
