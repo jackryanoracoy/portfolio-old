@@ -2129,8 +2129,11 @@ div.card-cluster {
   display: block;
 }
 .title-bar-invisible h2, .title-bar-invisible h3, .title-bar-invisible h4, .title-bar-invisible h5, .title-bar-invisible h6 {
+  padding-left: 15px;
   color: #F44336;
   font-size: 1.8rem;
+  text-transform: uppercase;
+  border-left: 5px solid #F44336;
 }
 
 @media only screen and (min-width: 993px) {
