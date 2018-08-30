@@ -1,22 +1,20 @@
 # JACKRO - Jack Ryan Oracoy
-  
-JACKRO - Jack Ryan Oracoy  
-https://jackryanoracoy.github.io
+https://jackryanoracoy.github.io  
   
 Design And Develop Your Brand  
 We'll help you design and develop  
 your website, brand logo, advertisement, and more...   
   
   
-SERVICES
-------------------------------------------------------------
+SERVICES  
+------------------------------------------------------------  
 Web Development  
 Web Design  
 Graphic Design  
 Branding Design  
   
-OTHER PORTAL
-------------------------------------------------------------
+PORTAL  
+------------------------------------------------------------  
 Github      :   https://github.com/jackryanoracoy  
 Facebook    :   https://facebook.com/JackRyanOracoy  
 Twitter     :   https://twitter.com/JackRyanOracoy  
