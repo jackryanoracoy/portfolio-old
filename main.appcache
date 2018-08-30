@@ -1,11 +1,13 @@
 CACHE MANIFEST
 
-# Cache manifest version 1.0.8
+# Cache manifest version 1.0.9
 
 CACHE:
 
 index.html
-
+about/index.html
+contact/index.html
+services/index.html
 portfolio/index.html
 portfolio/branding-design/index.html
 portfolio/featured/index.html
