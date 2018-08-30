@@ -44,6 +44,15 @@
     <meta name="msapplication-TileImage" content="../app-icon/ms-icon-144x144.png">
 
     <link rel="stylesheet" type="text/css" media="all" href="../common/css/style.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124906540-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-124906540-1');
+    </script>
   </head>
 
   <body id="site-body">
@@ -124,6 +133,44 @@
             <wbr>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. 
             <wbr>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. 
             <wbr>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+          </section>
+        </div>
+      </div>
+
+      <div class="background white">
+        <div class="wrap">
+          <section id="contact" class="section">
+            <div class="title-bar">
+              <h2 class="section-title"><i class="fas fa-paper-plane"></i>&nbsp;Contact Form</h2>
+            </div>
+            <div class="contact-items">
+              <div class="contact-item content-1">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                <wbr>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                <wbr>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                <wbr>Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+                <div class="illus-placeholder"></div>
+                <p class="alt-contact">All sent emails are read regularly at 6PM (GMT +8), you can alternatively reach us at 
+                <a href="https://m.me/jackryanoracoy"><i class="fab fa-facebook-messenger"></i>&nbsp;M.ME/jackryanoracoy</a></p>
+              </div>
+              <div class="contact-item content-2">
+                <form class="gform contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbwDADvWm0GiEXslhwkN8sg8oRkaUp9r9ZVpTEGn/exec">
+                  <h4 class="thankyou-message" style="display:none;"><i class="fas fa-check-circle"></i>&nbsp;Message successfully sent. We will get back to you soon!</h4>
+                  <input id="honeypot" type="text" name="honeypot" value="">
+                  <input name="name" type="text" required placeholder="Full Name">
+                  <input name="email" type="email" required placeholder="Email Address">
+                  <input name="number" type="text" pattern="[0-9]{12}" placeholder="Mobile Number (Optional)">
+                  <textarea name="message" required placeholder="Your Message"></textarea>
+                  <div class="submit-container">
+                    <button type="submit"><i class="fas fa-paper-plane"></i>&nbsp;Send Email</button>
+                    <p class="contact-note"><strong>NOTE:</strong>
+                    <br>Please provide enough details to your inquiry.
+                    <wbr>All fields are required except for field(s) mark as “optional”.  
+                    <wbr>Thank you for reaching us…</p>
+                  </div>
+                </form>
+              </div>
+            </div>
           </section>
         </div>
       </div>

@@ -44,6 +44,15 @@
     <meta name="msapplication-TileImage" content="app-icon/ms-icon-144x144.png">
 
     <link rel="stylesheet" type="text/css" media="all" href="common/css/style.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124906540-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-124906540-1');
+    </script>
   </head>
 
   <body id="site-body">
@@ -558,7 +567,7 @@
                 <wbr>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
                 <wbr>Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
                 <div class="illus-placeholder"></div>
-                <p class="alt-contact">All sent emails are read regularly at 6PM (GMT +8), you can alternatively reach us at 
+                <p class="alt-contact">All sent emails are read regularly at 8AM - 9PM (GMT +8), you can alternatively reach us at our messenger
                 <a href="https://m.me/jackryanoracoy"><i class="fab fa-facebook-messenger"></i>&nbsp;M.ME/jackryanoracoy</a></p>
               </div>
               <div class="contact-item content-2">
@@ -567,7 +576,7 @@
                   <input id="honeypot" type="text" name="honeypot" value="">
                   <input name="name" type="text" required placeholder="Full Name">
                   <input name="email" type="email" required placeholder="Email Address">
-                  <input name="number" type="text" pattern="[0-9]{12}" placeholder="Mobile Number (Optional)">
+                  <input name="number" type="text" pattern="[0-9]{10}" placeholder="Mobile Number (Optional)">
                   <textarea name="message" required placeholder="Your Message"></textarea>
                   <div class="submit-container">
                     <button type="submit"><i class="fas fa-paper-plane"></i>&nbsp;Send Email</button>
