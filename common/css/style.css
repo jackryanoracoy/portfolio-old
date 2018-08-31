@@ -1011,6 +1011,10 @@ textarea {
   text-align: right;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -2446,6 +2450,30 @@ section:last-child .button-holder {
 @media only screen and (min-width: 993px) {
   .illus-placeholder {
     height: 300px;
+  }
+}
+/*--------------------------------------------------
+  service-illus-container
+--------------------------------------------------*/
+.service-illus-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  margin: 20px 0 0;
+  background-color: #F5F5F5;
+  overflow: hidden;
+}
+.service-illus-container img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+  .service-illus-container {
+    width: calc(100% - 20px);
+    margin: 0 0 0 auto;
   }
 }
 @media print {

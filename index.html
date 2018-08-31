@@ -501,23 +501,6 @@
               <div class="service-item">
                 <div class="card alt1">
                   <div class="icon-entry">
-                    <i class="fas fa-paint-brush"></i>
-                  </div>
-                  <div class="service-info">
-                    <h3 class="title-entry">Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-                    <wbr>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    <wbr>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-                    <wbr>Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
-                  </div>
-                  <div class="service-link">
-                    <a class="btn alt2" href="#">Learn More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="service-item">
-                <div class="card alt1">
-                  <div class="icon-entry">
                     <i class="fas fa-code"></i>
                   </div>
                   <div class="service-info">
@@ -526,9 +509,40 @@
                     <wbr>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
                     <wbr>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
                     <wbr>Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+                    <br>
+                    <ul class="category-list">
+                      <li><i class="far fa-check-circle"></i>&nbsp;Web Development</li>
+                      <li><i class="far fa-check-circle"></i>&nbsp;SEO Optimization</li>
+                      <li><i class="far fa-check-circle"></i>&nbsp;Page Speed Optimization</li>
+                      <li><i class="far fa-check-circle"></i>&nbsp;Web Analytics</li>
+                    </ul>
                   </div>
                   <div class="service-link">
-                    <a class="btn alt2" href="#">Learn More</a>
+                    <a class="btn alt2" href="services/index.html#code">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="card alt1">
+                  <div class="icon-entry">
+                    <i class="fas fa-paint-brush"></i>
+                  </div>
+                  <div class="service-info">
+                    <h3 class="title-entry">Design</h3>
+                    <p class="info-entry">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                    <wbr>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    <wbr>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+                    <wbr>Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+                    <br>
+                    <ul class="category-list">
+                      <li><i class="far fa-check-circle"></i>&nbsp;Web Design</li>
+                      <li><i class="far fa-check-circle"></i>&nbsp;Graphic Design</li>
+                      <li><i class="far fa-check-circle"></i>&nbsp;Branding Design</li>
+                      <li><i class="far fa-check-circle"></i>&nbsp;UI/UX Design</li>
+                    </ul>
+                  </div>
+                  <div class="service-link">
+                    <a class="btn alt2" href="services/index.html#design">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -543,9 +557,16 @@
                     <wbr>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
                     <wbr>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
                     <wbr>Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+                    <br>
+                    <ul class="category-list">
+                      <li><i class="far fa-check-circle"></i>&nbsp;Photo Editing</li>
+                      <li><i class="far fa-check-circle"></i>&nbsp;Print Media</li>
+                      <li><i class="far fa-check-circle"></i>&nbsp;Marketing Solution</li>
+                      <li><i class="far fa-check-circle"></i>&nbsp;Virtual Assisting</li>
+                    </ul>                  
                   </div>
                   <div class="service-link">
-                    <a class="btn alt2" href="#">Learn More</a>
+                    <a class="btn alt2" href="services/index.html#outsource">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -656,20 +677,20 @@
 
     <!-- ATF Image Slides -->
     <script>
-    var atfIndex = 0;
-    carousel();
+      var atfIndex = 0;
+      carousel();
 
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("slides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        atfIndex++;
+        if (atfIndex > x.length) {atfIndex = 1}    
+        x[atfIndex-1].style.display = "block";  
+        setTimeout(carousel, 1000);
       }
-      atfIndex++;
-      if (atfIndex > x.length) {atfIndex = 1}    
-      x[atfIndex-1].style.display = "block";  
-      setTimeout(carousel, 1000);
-    }
     </script>
 
   </body><!-- Body -->

@@ -590,8 +590,8 @@
       }
     }
   
-    & .service-info { 
-      padding: 15px 10px 30px; 
+    & .service-info {
+      padding: 15px 10px 30px;
       text-align: left;
     }
   
@@ -768,4 +768,29 @@
 
 @media only screen and (min-width: $media-medium + 1) {
   .illus-placeholder { height: 300px; }
+}
+
+/*--------------------------------------------------
+  service-illus-container
+--------------------------------------------------*/
+
+.service-illus-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  margin: 20px 0 0;
+  background-color: $grey-100;
+  overflow: hidden;
+
+  & img { max-width: 100%; }
+}
+
+@media only screen and (min-width: $media-small + 1) {
+  .service-illus-container {
+    width: calc(100% - 20px);
+    margin: 0 0 0 auto;
+  }
 }
