@@ -2453,29 +2453,45 @@ section:last-child .button-holder {
   }
 }
 /*--------------------------------------------------
-  service-illus-container
+  illus-container
 --------------------------------------------------*/
-.service-illus-container {
+.illus-container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   max-width: 600px;
-  height: 100%;
   margin: 20px 0 0;
-  background-color: #F5F5F5;
   overflow: hidden;
 }
-.service-illus-container img {
+.illus-container.alt1 {
+  height: 100%;
+  background-color: #F5F5F5;
+}
+.illus-container img {
   max-width: 100%;
 }
 
 @media only screen and (min-width: 601px) {
-  .service-illus-container {
+  .illus-container {
     width: calc(100% - 20px);
     margin: 0 0 0 auto;
   }
 }
+/*--------------------------------------------------
+  map-iframe
+--------------------------------------------------*/
+.map-iframe {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #F5F5F5;
+}
+.map-iframe iframe {
+  width: inherit;
+  height: inherit;
+  border: none;
+}
+
 @media print {
   body {
     font-family: "Roboto", sans-serif;
