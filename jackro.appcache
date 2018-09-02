@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Cache manifest version 1.1.2
+# Cache manifest version 1.1.3
 
 CACHE:
 
@@ -58,7 +58,8 @@ images/atf/atf-illus-03.png
 images/atf/atf-illus-04.png
 images/atf/atf-illus-05.png
 
-about/images/image-jackro-logo.png
+about/images/image-jackro-logo.jpg
+about/images/image-profile-picture.jpg
 
 NETWORK:
 *

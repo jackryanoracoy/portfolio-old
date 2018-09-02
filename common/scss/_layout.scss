@@ -825,8 +825,7 @@
   width: 200px;
   height: 200px;
   margin: 5px;
-  background-color: $white;
-  border: 1px solid $grey-100;
+  background-color: $grey-100;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: $z-depth;
@@ -838,7 +837,5 @@
 
   & img {
     max-width: 100%;
-    object-fit: cover;
-    font-family: 'object-fit: cover;'
   }
 }
