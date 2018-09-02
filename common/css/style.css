@@ -2492,6 +2492,32 @@ section:last-child .button-holder {
   border: none;
 }
 
+/*--------------------------------------------------
+  profile-picture
+--------------------------------------------------*/
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  background-color: #FFF;
+  border: 1px solid #F5F5F5;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.profile-picture.thumb {
+  width: 100px;
+  height: 100px;
+}
+.profile-picture img {
+  max-width: 100%;
+  object-fit: cover;
+  font-family: "object-fit: cover;";
+}
+
 @media print {
   body {
     font-family: "Roboto", sans-serif;

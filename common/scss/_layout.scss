@@ -813,3 +813,32 @@
     border: none;
   }
 }
+
+/*--------------------------------------------------
+  profile-picture
+--------------------------------------------------*/
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  background-color: $white;
+  border: 1px solid $grey-100;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: $z-depth;
+
+  &.thumb {
+    width: 100px;
+    height: 100px;
+  }
+
+  & img {
+    max-width: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;'
+  }
+}
