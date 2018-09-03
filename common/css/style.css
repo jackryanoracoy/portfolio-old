@@ -1266,7 +1266,7 @@ textarea {
 /*--------------------------------------------------
   Title
 --------------------------------------------------*/
-.section-title, .heading-title, .heading-title.sub, .heading-title.sub2, .headline-heading, .atf-heading, .portfolio-info .title-entry {
+.section-title, .heading-title, .heading-title.sub, .headline-heading, .atf-heading, .portfolio-info .title-entry {
   color: #555;
   font-size: 1.8rem;
   font-family: "Roboto Condensed", sans-serif;
@@ -1287,13 +1287,7 @@ textarea {
 
 .heading-title.sub {
   font-size: 1.5rem;
-  border-color: #CCC;
-  margin: 0 0 20px;
-}
-
-.heading-title.sub2 {
-  font-size: 1.4rem;
-  border-color: #EEE;
+  border-color: #EEEEEE;
   margin: 0 0 20px;
 }
 
@@ -1418,7 +1412,6 @@ textarea {
 .alt-contact {
   width: 100%;
   padding: 15px 10px;
-  margin: 0 10px;
   color: #999999 !important;
   font-size: 1.2rem;
   line-height: 1.5;
@@ -1617,30 +1610,64 @@ div.card-cluster {
 }
 
 /*--------------------------------------------------
-  more-social, category-list
+  more-social, category-list, resume-list
 --------------------------------------------------*/
-.more-social, .category-list {
+.more-social,
+.category-list, .resume-list {
   list-style: none;
-  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1;
 }
-.more-social li, .category-list li {
+.more-social li,
+.category-list li, .resume-list li {
   margin: 0 0 10px;
 }
-.more-social li:last-child, .category-list li:last-child {
+.more-social li:last-child,
+.category-list li:last-child, .resume-list li:last-child {
   margin: 0;
 }
-.more-social h1, .category-list h1, .more-social h2, .category-list h2, .more-social h3, .category-list h3, .more-social h4, .category-list h4, .more-social h5, .category-list h5, .more-social h6, .category-list h6 {
+.more-social h1,
+.category-list h1, .resume-list h1, .more-social h2,
+.category-list h2, .resume-list h2, .more-social h3,
+.category-list h3, .resume-list h3, .more-social h4,
+.category-list h4, .resume-list h4, .more-social h5,
+.category-list h5, .resume-list h5, .more-social h6,
+.category-list h6, .resume-list h6 {
   font-size: 1.5rem;
 }
-.more-social a, .category-list a {
+.more-social a,
+.category-list a, .resume-list a {
   color: inherit;
   text-decoration: none;
 }
-.more-social a:hover, .category-list a:hover {
+.more-social a:hover,
+.category-list a:hover, .resume-list a:hover {
   opacity: 0.75;
   text-decoration: none;
+}
+
+.more-social,
+.category-list {
+  font-size: 1.4rem;
+}
+
+.resume-list {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.resume-list li {
+  position: relative;
+  padding-left: 20px;
+}
+.resume-list li::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "\f058";
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 500;
+  transform: translateY(-50%);
 }
 
 /*----------------------------------------------
@@ -2479,20 +2506,6 @@ section:last-child .button-holder {
   }
 }
 /*--------------------------------------------------
-  map-iframe
---------------------------------------------------*/
-.map-iframe {
-  width: 100%;
-  height: 500px;
-  border: 1px solid #F5F5F5;
-}
-.map-iframe iframe {
-  width: inherit;
-  height: inherit;
-  border: none;
-}
-
-/*--------------------------------------------------
   profile-picture
 --------------------------------------------------*/
 .profile-picture {
@@ -2513,6 +2526,15 @@ section:last-child .button-holder {
 }
 .profile-picture img {
   max-width: 100%;
+}
+
+/*--------------------------------------------------
+  map
+--------------------------------------------------*/
+.map {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #F5F5F5;
 }
 
 @media print {

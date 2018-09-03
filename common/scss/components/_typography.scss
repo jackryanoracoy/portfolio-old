@@ -38,14 +38,7 @@
 .heading-title.sub {
   @include title;
   font-size: $default-size;
-  border-color: #CCC;
-  margin: 0 0 20px;
-}
-
-.heading-title.sub2 {
-  @include title;
-  font-size: $medium-size;
-  border-color: #EEE;
+  border-color: $grey-200;
   margin: 0 0 20px;
 }
 
@@ -193,7 +186,6 @@
 .alt-contact {
   width: 100%;
   padding: 15px 10px;
-  margin: 0 10px;
   color: $grey-500 !important;
   font-size: 1.2rem;
   line-height: 1.5;

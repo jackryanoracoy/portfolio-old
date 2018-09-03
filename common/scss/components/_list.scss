@@ -1,5 +1,5 @@
 /*--------------------------------------------------
-  more-social, category-list
+  more-social, category-list, resume-list
 --------------------------------------------------*/
 
 @mixin list($extend: true) {
@@ -8,7 +8,6 @@
   } @else {
     & {
       list-style: none;
-      font-size: $medium-size;
       font-weight: 400;
       line-height: 1;
 
@@ -35,6 +34,30 @@
 
 %list { @include list($extend: false); }
 
-.more-social { @include list; }
+.more-social,
+.category-list {
+  @include list;
+  font-size: $medium-size;
+}
 
-.category-list { @include list; }
+.resume-list {
+  @include list;
+  font-size: $default-size;
+  line-height: 1.5;
+
+  & li {
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      content: "\f058";
+      font-family: 'Font Awesome 5 Free';
+      font-style: normal;
+      font-weight: 500;
+      transform: translateY(-50%);
+    }
+  }
+}
