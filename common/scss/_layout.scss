@@ -27,7 +27,6 @@
     height: $header-height + $navigation-height;
 
     &.active { height: $header-height; }
-
     &.active.show { height: $header-height + $navigation-height; }
   }
 }
@@ -35,7 +34,6 @@
 @media only screen and (max-width: $media-medium) {
   .header-section {
     &.active { top: -$header-height; }
-    
     &.active.show,
     &.menu-opened { top: 0 !important; }
   }
@@ -141,7 +139,6 @@
       }
   
       & ul:first-child { margin-right: auto; }
-  
       & ul:last-child { margin-left: auto; }
     }
   }
@@ -224,9 +221,7 @@
       font-family: 'object-fit: cover;';
     }
 
-    & .slides {
-      display: none;
-    }
+    & .slides { display: none; }
   }
 }
 
@@ -242,7 +237,7 @@
     & .atf-about { width: 300px; }
     & .atf-illus {
       width: calc(100% - 300px);
-      
+
       & img { height: 300px; }
     }
   }
@@ -368,14 +363,12 @@
   z-index: 1;
 
   & section:first-child { padding-top: 50px; }
-
   & section:last-child { padding-bottom: 50px; }
 }
 
 @media only screen and (min-width: $media-medium + 1) {
   .site-main { 
     & section:first-child { padding-top: 100px; }
-  
     & section:last-child { padding-bottom: 100px; }
   }
 }
@@ -415,7 +408,6 @@
   margin: 0 0 40px;
 
   &.center { justify-content: center; }
-
   & a { margin-left: auto; }
 }
 
@@ -461,7 +453,6 @@
     width: 100%;  
   
     & div { transition: all 300ms ease-in-out; }
-  
     & .card { height: 290px; }
   
     & .portfolio-image {
@@ -505,9 +496,7 @@
     }
   
     & > div:hover .portfolio-image { height: 0; }
-  
     & > div:hover .portfolio-extra { height: calc(100% - 175px); }
-  
     & > div:hover .portfolio-link,
     & > div:hover .portfolio-extra {
       opacity: 1;
@@ -535,16 +524,13 @@
     overflow: hidden;
 
     &.limited { height: 310px; }
-
     &.first-feat .portfolio-item:first-child { width: 50%; }
 
     & .portfolio-item { 
       width: 25%; 
   
       & .portfolio-info { padding: 20px; }
-    
       & .portfolio-link { padding: 0 20px; }
-    
       & .portfolio-extra { padding: 0 20px; }
     }
   }
@@ -553,7 +539,7 @@
 @media only screen and (min-width: $media-large + 1) {
   .portfolio-items {
     &.first-feat .portfolio-item:first-child { width: 40%; }
-    .portfolio-item { width: 20%; }
+    & .portfolio-item { width: 20%; }
   }
 }
 
@@ -606,9 +592,8 @@
     }
   
     & > div { color: $white; }
-  
     & > div:hover { color: $default-color; }
-  
+
     & > div:hover .icon-entry { 
       height: 0; 
       padding: 33px 0 0;
@@ -638,7 +623,6 @@
       }
 
       & .service-info { padding: 15px 30px 50px; }
-
       & .service-link { padding: 40px 30px; }
     }
   }
@@ -658,9 +642,7 @@
     width: 100%;
   
     &.content-1 { padding: 0 0 10px; }
-  
     &.content-2 { padding: 10px 0 0; }
-  
     & .alt-contact { margin: auto 0 0; }
   }
 }
@@ -671,7 +653,6 @@
       width: 50%;
       
       &.content-1 { padding: 0 20px 0 0; }
-  
       &.content-2 { padding: 0 0 0 20px; }
     }
   }
@@ -680,9 +661,7 @@
 @media only screen and (min-width: $media-medium + 1) {
   .contact-items {
     & .contact-item {
-    
       &.content-1 { width: calc(100% - 520px); }
-  
       &.content-2 { width: 520px; }
     }
   }
@@ -703,17 +682,12 @@
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-  }
-
-  & .footer-item .footer-logo {
-    width: 75px;
 
     & img { max-width: 100%; }
+    & ul { margin-left: auto; }
   }
 
-  & .footer-item ul {
-    margin-left: auto;
-  }
+  & .footer-item .footer-logo { width: 75px; }
 }
 
 @media only screen and (min-width: $media-medium + 1) {
@@ -722,9 +696,7 @@
       width: 33.33%;
 
       &.content-1 { width: 40%; }
-
       &.content-2 { width: 30%; }
-
       &.content-3 { width: 30%; }
     }
 
@@ -732,8 +704,6 @@
       width: calc(100% - 95px);
       margin-left: 20px;
     }
-
-    & .footer-item.content-2 { justify-content: flex-end; }
   }
 }
 
@@ -747,12 +717,10 @@
   text-align: center;
   border-bottom: 1px solid $grey-300;
 
-  @at-root {
-    section:last-child  &{
-      border: none;
-      padding-bottom: 0;
-    }
-  }
+  @at-root { section:last-child & {
+    border: none;
+    padding-bottom: 0;
+  } }
 }
 
 /*--------------------------------------------------
@@ -819,9 +787,7 @@
     height: 100px;
   }
 
-  & img {
-    max-width: 100%;
-  }
+  & img { max-width: 100%; }
 }
 
 /*--------------------------------------------------

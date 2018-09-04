@@ -1610,64 +1610,121 @@ div.card-cluster {
 }
 
 /*--------------------------------------------------
-  more-social, category-list, resume-list
+  icon-list
 --------------------------------------------------*/
-.more-social,
-.category-list, .resume-list {
+.icon-list {
   list-style: none;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1;
-}
-.more-social li,
-.category-list li, .resume-list li {
-  margin: 0 0 10px;
-}
-.more-social li:last-child,
-.category-list li:last-child, .resume-list li:last-child {
-  margin: 0;
-}
-.more-social h1,
-.category-list h1, .resume-list h1, .more-social h2,
-.category-list h2, .resume-list h2, .more-social h3,
-.category-list h3, .resume-list h3, .more-social h4,
-.category-list h4, .resume-list h4, .more-social h5,
-.category-list h5, .resume-list h5, .more-social h6,
-.category-list h6, .resume-list h6 {
-  font-size: 1.5rem;
-}
-.more-social a,
-.category-list a, .resume-list a {
-  color: inherit;
-  text-decoration: none;
-}
-.more-social a:hover,
-.category-list a:hover, .resume-list a:hover {
-  opacity: 0.75;
-  text-decoration: none;
-}
-
-.more-social,
-.category-list {
-  font-size: 1.4rem;
-}
-
-.resume-list {
-  font-size: 1.5rem;
   line-height: 1.5;
 }
-.resume-list li {
+.star.icon-list li::before {
+  content: "\f005";
+}
+.circle-checked.icon-list li::before {
+  content: "\f058";
+}
+.square-checked.icon-list li::before {
+  content: "\f14a";
+}
+.icon-list li {
+  margin: 0 0 10px;
   position: relative;
   padding-left: 20px;
 }
-.resume-list li::before {
+.icon-list li::before {
   position: absolute;
   top: 50%;
   left: 0;
-  content: "\f058";
+  content: "\f111";
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 500;
   transform: translateY(-50%);
+}
+.icon-list li:last-child {
+  margin: 0;
+}
+.icon-list h1, .icon-list h2, .icon-list h3, .icon-list h4, .icon-list h5, .icon-list h6 {
+  font-size: 1.5rem;
+}
+.icon-list a {
+  color: inherit;
+  text-decoration: none;
+}
+.icon-list a:hover {
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+.icon-list.colum-2 {
+  column-count: 2;
+}
+.icon-list.colum-3 {
+  column-count: 3;
+}
+.icon-list.colum-4 {
+  column-count: 4;
+}
+
+@media only screen and (min-width: 601px) {
+  .icon-list.colum-s-2 {
+    column-count: 2;
+  }
+  .icon-list.colum-s-3 {
+    column-count: 3;
+  }
+  .icon-list.colum-s-4 {
+    column-count: 4;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .icon-list.colum-m-2 {
+    column-count: 2;
+  }
+  .icon-list.colum-m-3 {
+    column-count: 3;
+  }
+  .icon-list.colum-m-4 {
+    column-count: 4;
+  }
+}
+@media only screen and (min-width: 1301px) {
+  .icon-list.colum-l-2 {
+    column-count: 2;
+  }
+  .icon-list.colum-l-3 {
+    column-count: 3;
+  }
+  .icon-list.colum-l-4 {
+    column-count: 4;
+  }
+}
+/*--------------------------------------------------
+  more-social, category-list
+--------------------------------------------------*/
+.more-social, .category-list {
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.more-social li, .category-list li {
+  margin: 0 0 10px;
+}
+.more-social li:last-child, .category-list li:last-child {
+  margin: 0;
+}
+.more-social h1, .category-list h1, .more-social h2, .category-list h2, .more-social h3, .category-list h3, .more-social h4, .category-list h4, .more-social h5, .category-list h5, .more-social h6, .category-list h6 {
+  font-size: 1.5rem;
+}
+.more-social a, .category-list a {
+  color: inherit;
+  text-decoration: none;
+}
+.more-social a:hover, .category-list a:hover {
+  opacity: 0.75;
+  text-decoration: none;
 }
 
 /*----------------------------------------------
@@ -2419,14 +2476,14 @@ div.card-cluster {
   justify-content: flex-start;
   width: 100%;
 }
-.footer-items .footer-item .footer-logo {
-  width: 75px;
-}
-.footer-items .footer-item .footer-logo img {
+.footer-items .footer-item img {
   max-width: 100%;
 }
 .footer-items .footer-item ul {
   margin-left: auto;
+}
+.footer-items .footer-item .footer-logo {
+  width: 75px;
 }
 
 @media only screen and (min-width: 993px) {
@@ -2445,9 +2502,6 @@ div.card-cluster {
   .footer-items .footer-item .footer-info {
     width: calc(100% - 95px);
     margin-left: 20px;
-  }
-  .footer-items .footer-item.content-2 {
-    justify-content: flex-end;
   }
 }
 /*--------------------------------------------------
