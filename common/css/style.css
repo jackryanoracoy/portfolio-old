@@ -325,55 +325,104 @@ textarea {
   width: 100%;
 }
 
-.col.s1 {
+.col.xs1 {
   width: 8.33333%;
 }
 
-.col.s2 {
+.col.xs2 {
   width: 16.66666%;
 }
 
-.col.s3 {
+.col.xs3 {
   width: 24.99999%;
 }
 
-.col.s4 {
+.col.xs4 {
   width: 33.33333%;
 }
 
-.col.s5 {
+.col.xs5 {
   width: 41.66666%;
 }
 
-.col.s6 {
+.col.xs6 {
   width: 49.99999%;
 }
 
-.col.s7 {
+.col.xs7 {
   width: 58.33333%;
 }
 
-.col.s8 {
+.col.xs8 {
   width: 66.66666%;
 }
 
-.col.s9 {
+.col.xs9 {
   width: 74.99999%;
 }
 
-.col.s10 {
+.col.xs10 {
   width: 83.33333%;
 }
 
-.col.s11 {
+.col.xs11 {
   width: 91.66666%;
 }
 
-.col.s12 {
+.col.xs12 {
   width: 99.99999%;
 }
 
 @media (min-width: 601px) {
+  .col.s1 {
+    width: 8.33333%;
+  }
+
+  .col.s2 {
+    width: 16.66666%;
+  }
+
+  .col.s3 {
+    width: 24.99999%;
+  }
+
+  .col.s4 {
+    width: 33.33333%;
+  }
+
+  .col.s5 {
+    width: 41.66666%;
+  }
+
+  .col.s6 {
+    width: 49.99999%;
+  }
+
+  .col.s7 {
+    width: 58.33333%;
+  }
+
+  .col.s8 {
+    width: 66.66666%;
+  }
+
+  .col.s9 {
+    width: 74.99999%;
+  }
+
+  .col.s10 {
+    width: 83.33333%;
+  }
+
+  .col.s11 {
+    width: 91.66666%;
+  }
+
+  .col.s12 {
+    width: 99.99999%;
+  }
+}
+@media (min-width: 993px) {
   .col.m1 {
     width: 8.33333%;
   }
@@ -422,7 +471,7 @@ textarea {
     width: 99.99999%;
   }
 }
-@media (min-width: 993px) {
+@media (min-width: 1301px) {
   .col.l1 {
     width: 8.33333%;
   }
@@ -471,55 +520,6 @@ textarea {
     width: 99.99999%;
   }
 }
-@media (min-width: 1301px) {
-  .col.xl1 {
-    width: 8.33333%;
-  }
-
-  .col.xl2 {
-    width: 16.66666%;
-  }
-
-  .col.xl3 {
-    width: 24.99999%;
-  }
-
-  .col.xl4 {
-    width: 33.33333%;
-  }
-
-  .col.xl5 {
-    width: 41.66666%;
-  }
-
-  .col.xl6 {
-    width: 49.99999%;
-  }
-
-  .col.xl7 {
-    width: 58.33333%;
-  }
-
-  .col.xl8 {
-    width: 66.66666%;
-  }
-
-  .col.xl9 {
-    width: 74.99999%;
-  }
-
-  .col.xl10 {
-    width: 83.33333%;
-  }
-
-  .col.xl11 {
-    width: 91.66666%;
-  }
-
-  .col.xl12 {
-    width: 99.99999%;
-  }
-}
 /*--------------------------------------------------
   col-flex
 --------------------------------------------------*/
@@ -538,55 +538,104 @@ textarea {
   align-items: center;
 }
 
-.col-flex .flex-content.s1 {
+.col-flex .flex-content.xs1 {
   width: 8.33333%;
 }
 
-.col-flex .flex-content.s2 {
+.col-flex .flex-content.xs2 {
   width: 16.66666%;
 }
 
-.col-flex .flex-content.s3 {
+.col-flex .flex-content.xs3 {
   width: 24.99999%;
 }
 
-.col-flex .flex-content.s4 {
+.col-flex .flex-content.xs4 {
   width: 33.33333%;
 }
 
-.col-flex .flex-content.s5 {
+.col-flex .flex-content.xs5 {
   width: 41.66666%;
 }
 
-.col-flex .flex-content.s6 {
+.col-flex .flex-content.xs6 {
   width: 49.99999%;
 }
 
-.col-flex .flex-content.s7 {
+.col-flex .flex-content.xs7 {
   width: 58.33333%;
 }
 
-.col-flex .flex-content.s8 {
+.col-flex .flex-content.xs8 {
   width: 66.66666%;
 }
 
-.col-flex .flex-content.s9 {
+.col-flex .flex-content.xs9 {
   width: 74.99999%;
 }
 
-.col-flex .flex-content.s10 {
+.col-flex .flex-content.xs10 {
   width: 83.33333%;
 }
 
-.col-flex .flex-content.s11 {
+.col-flex .flex-content.xs11 {
   width: 91.66666%;
 }
 
-.col-flex .flex-content.s12 {
+.col-flex .flex-content.xs12 {
   width: 99.99999%;
 }
 
 @media (min-width: 601px) {
+  .col-flex .flex-content.s1 {
+    width: 8.33333%;
+  }
+
+  .col-flex .flex-content.s2 {
+    width: 16.66666%;
+  }
+
+  .col-flex .flex-content.s3 {
+    width: 24.99999%;
+  }
+
+  .col-flex .flex-content.s4 {
+    width: 33.33333%;
+  }
+
+  .col-flex .flex-content.s5 {
+    width: 41.66666%;
+  }
+
+  .col-flex .flex-content.s6 {
+    width: 49.99999%;
+  }
+
+  .col-flex .flex-content.s7 {
+    width: 58.33333%;
+  }
+
+  .col-flex .flex-content.s8 {
+    width: 66.66666%;
+  }
+
+  .col-flex .flex-content.s9 {
+    width: 74.99999%;
+  }
+
+  .col-flex .flex-content.s10 {
+    width: 83.33333%;
+  }
+
+  .col-flex .flex-content.s11 {
+    width: 91.66666%;
+  }
+
+  .col-flex .flex-content.s12 {
+    width: 99.99999%;
+  }
+}
+@media (min-width: 993px) {
   .col-flex .flex-content.m1 {
     width: 8.33333%;
   }
@@ -635,7 +684,7 @@ textarea {
     width: 99.99999%;
   }
 }
-@media (min-width: 993px) {
+@media (min-width: 1301px) {
   .col-flex .flex-content.l1 {
     width: 8.33333%;
   }
@@ -681,55 +730,6 @@ textarea {
   }
 
   .col-flex .flex-content.l12 {
-    width: 99.99999%;
-  }
-}
-@media (min-width: 1301px) {
-  .col-flex .flex-content.xl1 {
-    width: 8.33333%;
-  }
-
-  .col-flex .flex-content.xl2 {
-    width: 16.66666%;
-  }
-
-  .col-flex .flex-content.xl3 {
-    width: 24.99999%;
-  }
-
-  .col-flex .flex-content.xl4 {
-    width: 33.33333%;
-  }
-
-  .col-flex .flex-content.xl5 {
-    width: 41.66666%;
-  }
-
-  .col-flex .flex-content.xl6 {
-    width: 49.99999%;
-  }
-
-  .col-flex .flex-content.xl7 {
-    width: 58.33333%;
-  }
-
-  .col-flex .flex-content.xl8 {
-    width: 66.66666%;
-  }
-
-  .col-flex .flex-content.xl9 {
-    width: 74.99999%;
-  }
-
-  .col-flex .flex-content.xl10 {
-    width: 83.33333%;
-  }
-
-  .col-flex .flex-content.xl11 {
-    width: 91.66666%;
-  }
-
-  .col-flex .flex-content.xl12 {
     width: 99.99999%;
   }
 }
