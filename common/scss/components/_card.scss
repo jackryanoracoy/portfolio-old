@@ -11,31 +11,27 @@
       background-color: $card-color;
       border: $card-border;
       border-radius: $card-radius;
-      margin: $card-gutter;
-      overflow: hidden;
-      transition: all 120ms ease-in-out;
-
-      &:hover { box-shadow: $z-depth; }
 
       & .card-content { padding: $card-padding; }
-    }
-    
-    @at-root {
-      /* Add class "card-cluster" to grandparent/parent */
-      div.card-cluster { margin: -$card-gutter; }
     }
   }
 }
 
 %card { @include card($extend: false); }
 
-.card { 
-  @include card; 
+.card {
+  @include card;
+  transition: all 120ms ease-in-out;
+  overflow: hidden;
 
   &.alt1 { 
     background-color: rgba($color: $white, $alpha: 0.05);
     border: none;
   }
 
-  &.alt1:hover { background-color: rgba($color: $card-color, $alpha: 1); }
+  /* Add class "card-cluster" to grandparent/parent */
+  @at-root { div.card-cluster {
+    margin: -$card-gutter;
+    & .card { margin: $card-gutter; }
+  }}
 }

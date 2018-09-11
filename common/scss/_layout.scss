@@ -494,7 +494,8 @@
       visibility: hidden;
       transition: all 60ms ease-in-out;
     }
-  
+
+    & > div:hover { box-shadow: $z-depth; }
     & > div:hover .portfolio-image { height: 0; }
     & > div:hover .portfolio-extra { height: calc(100% - 175px); }
     & > div:hover .portfolio-link,
@@ -555,8 +556,6 @@
     width: 100%;
     min-height: 480px;
   
-    & .card { height: calc(100% - 20px); }
-  
     & .icon-entry {
       height: 135px;
       padding: 30px 10px 15px;
@@ -590,18 +589,26 @@
       text-align: center;
       transition: all 200ms ease-in-out 130ms;
     }
-  
-    & > div { color: $white; }
-    & > div:hover { color: $default-color; }
 
-    & > div:hover .icon-entry { 
-      height: 0; 
-      padding: 33px 0 0;
-    }
-  
-    & > div:hover .service-link {
-      bottom: 0;
-      opacity: 1;
+    & > div {
+      height: calc(100% - 20px);
+      color: $white;
+
+      &:hover {
+        color: $default-color;
+        background-color: rgba($color: $card-color, $alpha: 1);
+        box-shadow: $z-depth;
+      }
+      
+      &:hover .icon-entry { 
+        height: 0; 
+        padding: 33px 0 0;
+      }
+    
+      &:hover .service-link {
+        bottom: 0;
+        opacity: 1;
+      }
     }
   }
 }
@@ -720,7 +727,7 @@
   @at-root { section:last-child & {
     border: none;
     padding-bottom: 0;
-  } }
+  }}
 }
 
 /*--------------------------------------------------
@@ -771,9 +778,6 @@
 --------------------------------------------------*/
 
 .profile-picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 200px;
   height: 200px;
   margin: 5px;

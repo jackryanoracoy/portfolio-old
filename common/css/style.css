@@ -1586,27 +1586,25 @@ textarea {
   background-color: #FFF;
   border: 1px solid #EEE;
   border-radius: 4px;
-  margin: 10px;
-  overflow: hidden;
-  transition: all 120ms ease-in-out;
-}
-.card:hover {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .card .card-content {
   padding: 20px;
 }
-/* Add class "card-cluster" to grandparent/parent */
-div.card-cluster {
-  margin: -10px;
-}
 
+.card {
+  transition: all 120ms ease-in-out;
+  overflow: hidden;
+  /* Add class "card-cluster" to grandparent/parent */
+}
 .card.alt1 {
   background-color: rgba(255, 255, 255, 0.05);
   border: none;
 }
-.card.alt1:hover {
-  background-color: white;
+div.card-cluster {
+  margin: -10px;
+}
+div.card-cluster .card {
+  margin: 10px;
 }
 
 /*--------------------------------------------------
@@ -1629,14 +1627,10 @@ div.card-cluster {
 }
 .icon-list li {
   margin: 0 0 10px;
-  position: relative;
-  padding-left: 20px;
 }
 .icon-list li::before {
-  position: absolute;
-  top: 50%;
-  left: 0;
   content: "\f111";
+  margin-right: 5px;
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 500;
@@ -2283,6 +2277,9 @@ div.card-cluster {
   visibility: hidden;
   transition: all 60ms ease-in-out;
 }
+.portfolio-items .portfolio-item > div:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
 .portfolio-items .portfolio-item > div:hover .portfolio-image {
   height: 0;
 }
@@ -2352,9 +2349,6 @@ div.card-cluster {
   width: 100%;
   min-height: 480px;
 }
-.service-items .service-item .card {
-  height: calc(100% - 20px);
-}
 .service-items .service-item .icon-entry {
   height: 135px;
   padding: 30px 10px 15px;
@@ -2386,10 +2380,13 @@ div.card-cluster {
   transition: all 200ms ease-in-out 130ms;
 }
 .service-items .service-item > div {
+  height: calc(100% - 20px);
   color: #FFF;
 }
 .service-items .service-item > div:hover {
   color: #555;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .service-items .service-item > div:hover .icon-entry {
   height: 0;
@@ -2563,9 +2560,6 @@ section:last-child .button-holder {
   profile-picture
 --------------------------------------------------*/
 .profile-picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 200px;
   height: 200px;
   margin: 5px;

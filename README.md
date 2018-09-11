@@ -44,5 +44,5 @@ jackryanoracoy@gmail.com
 lngrzproject@gmail.com  
 https://facebook.com/JackRyanOracoy  
 https://facebook.com/LNGRZ  
-https://github.com/jackryanoracoy/  
-https://bitbucket.org/LNGRZ/jackro-portfolio/ 
+https://github.com/jackryanoracoy  
+https://bitbucket.org/LNGRZ  
