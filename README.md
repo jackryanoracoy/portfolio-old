@@ -21,6 +21,7 @@ Github     :   https://github.com/jackryanoracoy
 Facebook   :   https://facebook.com/JackRyanOracoy  
 Twitter    :   https://twitter.com/JackRyanOracoy  
 Behance    :   https://www.behance.net/jackryanor7dac  
+LinkedIn   :   https://www.linkedin.com/in/jackryanoracoy  
   
   
 ABOUT  

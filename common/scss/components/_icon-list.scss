@@ -24,15 +24,20 @@
         & li::before { content: "\f14a"; }
       }
 
-      & li { margin: 0 0 10px; }
+      & li {
+        position: relative;
+        margin: 0 0 10px;
+        padding-left: 25px;
+      }
 
       & li::before {
+        position: absolute;
+        top: 0;
+        left: 0;
         content: "\f111";
-        margin-right: 5px;
         font-family: 'Font Awesome 5 Free';
         font-style: normal;
         font-weight: 500;
-        transform: translateY(-50%);
       }
 
       & li:last-child { margin: 0; }

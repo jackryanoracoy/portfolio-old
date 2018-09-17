@@ -75,12 +75,10 @@
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
-
-      & .contact-note { align-self: center; }
     }
 
     & .thankyou-message {
-      margin: 0 0 40px;
+      margin: 0 0 20px;
       padding: 15px 20px 15px 40px;
       color: $white;
       text-indent: -0.95rem;
@@ -105,6 +103,8 @@
       margin: 0 0 40px;
       padding: 10px 20px;
     }
+
+    & .thankyou-message { margin: 0 0 40px; }
   }
 }
 
