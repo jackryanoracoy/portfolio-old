@@ -1,0 +1,68 @@
+/*----------------------------------------------
+    owl-carousel
+-----------------------------------------------*/
+
+.owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+
+  & [class*='owl-'] {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15px;
+    height: calc(100% - 10px);
+    color: #424242;
+    font-size: 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+    text-indent: -99999px;
+    opacity: 0.5;
+  }
+  
+  & [class*='owl-'].disabled { display: none; }
+  
+  & .owl-prev {
+    left: 0;
+    background: url(../img/chevron-left.svg) no-repeat center, #FFF;
+    background-size: 16px;
+  }
+  
+  & .owl-next {
+    right: 0;
+    background: url(../img/chevron-right.svg) no-repeat center, #FFF;
+    background-size: 16px;
+  }
+  
+  & .disabled { cursor: default; }
+
+  &.disabled + .owl-dots { margin-top: 10px; }
+}
+
+.owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+
+  & .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+  
+  & .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    background: #e4e4e4;
+    display: block;
+    border-radius: 50%;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+  }
+  
+  & .owl-dot.active span,
+  & .owl-dot:hover span {
+    background: #9d9d9d;
+  }
+}

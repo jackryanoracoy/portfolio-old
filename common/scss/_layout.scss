@@ -418,6 +418,15 @@
     display: block;
   }
 
+  &:target::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 180px;
+    margin-top: -180px;
+    visibility: hidden;
+  }
+
   & h2, h3, h4, h5, h6 {
     padding-left: 15px;
     color: $primary-color;

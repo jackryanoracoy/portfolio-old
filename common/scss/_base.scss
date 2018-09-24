@@ -45,7 +45,7 @@ html {
 body {
   min-width: inherit;
   color: $default-color;
-  font-size: $medium-size;
+  font-size: $default-size;
   font-family: $font-family;
 
   & ::-webkit-scrollbar {

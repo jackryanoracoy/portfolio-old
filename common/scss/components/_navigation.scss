@@ -147,16 +147,24 @@
       display: flex;
       list-style: none;
       color: $grey-100;
-      font-size: $default-size;
-      font-weight: 400;
+      font-size: $extra-small-size;
+      font-weight: 300;
       line-height: 1;
-      opacity: 0.5;
+      opacity: 0.4;
+      white-space: nowrap;
 
-      & li:not(:first-child)::before {
-        margin: 0 5px;
-        content: "\f054";
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
+      & li {
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        &:last-child { max-width: 50%; }
+
+        &:not(:first-child)::before {
+          margin: 0 5px;
+          content: "\f054";
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+        }
       }
       
       & a {
@@ -174,3 +182,7 @@
 %breadcrumbs { @include breadcrumbs($extend: false); }
 
 .breadcrumbs { @include breadcrumbs; }
+
+@media only screen and (min-width: $media-medium + 1) {
+  .breadcrumbs { font-size: $small-size; }
+}
