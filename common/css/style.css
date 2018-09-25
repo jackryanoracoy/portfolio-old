@@ -1243,11 +1243,14 @@ textarea {
 .breadcrumbs {
   display: flex;
   list-style: none;
-  color: #F5F5F5;
-  font-size: 1rem;
-  font-weight: 300;
+  padding: 20px 0;
+  color: #424242;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
   line-height: 1;
-  opacity: 0.4;
+  opacity: 0.7;
+  border-bottom: 1px solid #EEEEEE;
   white-space: nowrap;
 }
 .breadcrumbs li {
@@ -1265,17 +1268,13 @@ textarea {
 }
 .breadcrumbs a {
   color: inherit;
+  font-weight: 300;
   text-decoration: none;
 }
 .breadcrumbs a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 993px) {
-  .breadcrumbs {
-    font-size: 1.2rem;
-  }
-}
 /*--------------------------------------------------
   Title
 --------------------------------------------------*/
@@ -1601,7 +1600,7 @@ textarea {
   border-radius: 4px;
 }
 .card .card-content {
-  padding: 40px;
+  padding: 10px;
 }
 
 .card {
@@ -1620,6 +1619,11 @@ div.card-cluster .card {
   margin: 10px;
 }
 
+@media only screen and (min-width: 993px) {
+  .card .card-content {
+    padding: 40px;
+  }
+}
 /*--------------------------------------------------
   icon-list
 --------------------------------------------------*/
@@ -2087,9 +2091,9 @@ div.card-cluster .card {
 .site-headline {
   position: relative;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   height: 180px;
-  padding: 60px 10px 10px;
+  padding: 60px 10px 0;
   color: #FFF;
   background: linear-gradient(to bottom right, #F44336, #FF1744);
   overflow: hidden;
@@ -2103,26 +2107,21 @@ div.card-cluster .card {
   content: "";
   background-color: rgba(255, 255, 255, 0.2);
 }
-.site-headline .headline-title, .site-headline .headline-nav {
-  position: relative;
-  margin-top: auto;
-  z-index: 1;
-}
 
 @media only screen and (min-width: 993px) {
   .site-headline {
     height: 310px;
-    padding: 160px 20px 20px;
+    padding: 160px 20px 0;
   }
 }
 @media only screen and (min-width: 1301px) {
   .site-headline {
-    padding: 160px 30px 20px;
+    padding: 160px 30px 0;
   }
 }
 @media only screen and (min-width: 1381px) {
   .site-headline {
-    padding: 160px 50px 20px;
+    padding: 160px 50px 0;
   }
 }
 /*--------------------------------------------------
@@ -2153,19 +2152,13 @@ div.card-cluster .card {
   position: relative;
   z-index: 1;
 }
-.site-main section:first-child {
-  padding-top: 50px;
-}
-.site-main section:last-child {
-  padding-bottom: 50px;
+.site-main > div {
+  padding: 25px 0;
 }
 
 @media only screen and (min-width: 993px) {
-  .site-main section:first-child {
-    padding-top: 100px;
-  }
-  .site-main section:last-child {
-    padding-bottom: 100px;
+  .site-main > div {
+    padding: 50px 0;
   }
 }
 /*--------------------------------------------------
@@ -2176,6 +2169,14 @@ div.card-cluster .card {
 }
 .section.no-pad {
   padding: 0;
+}
+.section.no-vpad {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.section.no-hpad {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media only screen and (min-width: 993px) {

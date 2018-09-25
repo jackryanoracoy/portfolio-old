@@ -146,11 +146,14 @@
     & {
       display: flex;
       list-style: none;
-      color: $grey-100;
-      font-size: $extra-small-size;
-      font-weight: 300;
+      padding: 20px 0;
+      color: $grey-800;
+      font-size: $small-size;
+      font-weight: 500;
+      text-transform: uppercase;
       line-height: 1;
-      opacity: 0.4;
+      opacity: 0.7;
+      border-bottom: 1px solid $grey-200;
       white-space: nowrap;
 
       & li {
@@ -169,6 +172,7 @@
       
       & a {
         color: inherit;
+        font-weight: 300;
         text-decoration: none;
       }
 
@@ -182,7 +186,3 @@
 %breadcrumbs { @include breadcrumbs($extend: false); }
 
 .breadcrumbs { @include breadcrumbs; }
-
-@media only screen and (min-width: $media-medium + 1) {
-  .breadcrumbs { font-size: $small-size; }
-}

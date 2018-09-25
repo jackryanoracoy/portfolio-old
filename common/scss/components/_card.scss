@@ -12,7 +12,7 @@
       border: $card-border;
       border-radius: $card-radius;
 
-      & .card-content { padding: $card-padding; }
+      & .card-content { padding: $card-padding_m; }
     }
   }
 }
@@ -34,4 +34,10 @@
     margin: -$card-gutter;
     & .card { margin: $card-gutter; }
   }}
+}
+
+@media only screen and (min-width: $media-medium + 1) {
+  .card {
+    & .card-content { padding: $card-padding; }
+  }
 }
