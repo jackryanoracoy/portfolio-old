@@ -131,11 +131,19 @@ a:hover, a:active, a:focus {
   Typography
 --------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 40px;
   font-weight: bold;
   line-height: 1.15;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
+}
+
+p {
+  margin: 0 0 20px;
+}
+p:last-child {
+  margin: 0;
 }
 
 em {
@@ -1084,7 +1092,8 @@ textarea {
   opacity: 0.85;
 }
 .site-branding h1, .site-branding h5 {
-  margin-left: 10px;
+  margin: 0;
+  padding-left: 10px;
   color: inherit;
   font-size: 2.5rem;
   line-height: 1;
@@ -1115,7 +1124,7 @@ textarea {
 }
 @media only screen and (max-width: 992px) {
   .site-branding h1, .site-branding h5 {
-    margin: 0;
+    padding: 0;
   }
   .site-branding h1 small, .site-branding h5 small {
     display: none;
@@ -1279,6 +1288,7 @@ textarea {
   Title
 --------------------------------------------------*/
 .section-title, .heading-title, .heading-title.sub, .headline-heading, .atf-heading, .portfolio-info .title-entry {
+  margin: 0;
   color: #555;
   font-size: 1.8rem;
   font-family: "Roboto Condensed", sans-serif;
@@ -1377,6 +1387,7 @@ textarea {
 }
 .portfolio-info .info-entry {
   width: 100%;
+  margin: 0;
   color: #999999;
   font-size: 1.5rem;
   font-weight: 300;
@@ -1448,6 +1459,7 @@ textarea {
   footer-title
 --------------------------------------------------*/
 .footer-title {
+  margin: 0;
   color: #FFF;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -1462,6 +1474,7 @@ textarea {
   footer-text
 --------------------------------------------------*/
 .footer-text {
+  margin: 0 0 5px;
   font-size: 1rem;
 }
 .footer-text a {
@@ -1600,7 +1613,7 @@ textarea {
   border-radius: 4px;
 }
 .card .card-content {
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 .card {
@@ -1730,6 +1743,7 @@ div.card-cluster .card {
   margin: 0;
 }
 .more-social h1, .category-list h1, .more-social h2, .category-list h2, .more-social h3, .category-list h3, .more-social h4, .category-list h4, .more-social h5, .category-list h5, .more-social h6, .category-list h6 {
+  margin: 0;
   font-size: 1.5rem;
 }
 .more-social a, .category-list a {
@@ -2092,7 +2106,8 @@ div.card-cluster .card {
   position: relative;
   display: flex;
   align-items: center;
-  height: 180px;
+  justify-content: center;
+  height: 150px;
   padding: 60px 10px 0;
   color: #FFF;
   background: linear-gradient(to bottom right, #F44336, #FF1744);
@@ -2196,6 +2211,11 @@ div.card-cluster .card {
   padding: 20px 0 0;
 }
 
+@media only screen and (min-width: 993px) {
+  .article {
+    padding: 40px 0 0;
+  }
+}
 /*--------------------------------------------------
   title-bar
 --------------------------------------------------*/
@@ -2203,12 +2223,17 @@ div.card-cluster .card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 }
 .title-bar.center {
   justify-content: center;
 }
 
+@media only screen and (min-width: 993px) {
+  .title-bar {
+    margin: 0 0 40px;
+  }
+}
 /*--------------------------------------------------
   title-bar-invisible
 --------------------------------------------------*/

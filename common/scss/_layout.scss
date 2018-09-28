@@ -284,7 +284,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: $header-height_m + 120px;
+  justify-content: center;
+  height: $header-height_m + 90px;
   padding: $header-height_m 10px 0;
   color: $white;
   background: $gradient-color;
@@ -392,6 +393,10 @@
 
 .article { padding: 20px 0 0; }
 
+@media only screen and (min-width: $media-medium + 1) {
+  .article { padding: 40px 0 0; }
+}
+
 /*--------------------------------------------------
   title-bar
 --------------------------------------------------*/
@@ -400,9 +405,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 
   &.center { justify-content: center; }
+}
+
+@media only screen and (min-width: $media-medium + 1) {
+  .title-bar { margin: 0 0 40px; }
 }
 
 /*--------------------------------------------------
@@ -471,7 +480,7 @@
       font-family: 'object-fit: cover;';
     }
   
-    & .portfolio-info { 
+    & .portfolio-info {
       padding: 20px 10px;
       overflow: hidden;
     }
