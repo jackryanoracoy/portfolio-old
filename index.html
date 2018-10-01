@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="EN" manifest="jackro.appcache">
+<html lang="EN">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -662,43 +662,55 @@
     <script async src="common/js/custom.min.js"></script>
 
     <!-- Contact Form Handler -->
-    <script data-cfasync="false" type="text/javascript" src="common/js/form-submission-handler.min.js"></script>
+    <script data-cfasync="false" src="common/js/form-submission-handler.min.js"></script>
 
     <!-- ATF Image Slides -->
     <script>
-      var atfIndex = 0;
-      carousel();
+    var atfIndex = 0;
+    carousel();
 
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("slides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        atfIndex++;
-        if (atfIndex > x.length) {atfIndex = 1}    
-        x[atfIndex-1].style.display = "block";  
-        setTimeout(carousel, 1000);
-      }
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    atfIndex++;
+    if (atfIndex > x.length) {atfIndex = 1}    
+    x[atfIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000);
+    }
     </script>
 
     <!-- Google Map -->
     <script>
-      function initMap() {
-        var myLatLng = {lat: 10.342604, lng: 123.916624};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: myLatLng,
-          zoom: 15
-        });
+    function initMap() {
+    var myLatLng = {lat: 10.342604, lng: 123.916624};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      zoom: 15
+    });
 
-        var marker = new google.maps.Marker({
-          map: map,
-          position: myLatLng,
-          title: 'JACKRO - Cebu City'
-        });
-      }
+    var marker = new google.maps.Marker({
+      map: map,
+      position: myLatLng,
+      title: 'JACKRO - Cebu City'
+    });
+    }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDho7TRwrmOKBblYR2rMrQ5cxPl2zPv3ds&callback=initMap"></script>
+
+    <!-- Service Worker -->
+    <script>
+    if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('serviceworker.js')
+      .then(function() { console.log("Service Worker Registered"); });
+    }
+    </script>
+
+    <!-- No Script -->
+    <noscript>Please enable JavaScript and revisit (reload) this page.</noscript>
 
   </body><!-- Body -->
 </html>
