@@ -139,7 +139,7 @@
                     <p>Please provide enough details to your inquiry.
                     All fields are required except for field(s) mark as “optional”. Thank you for reaching us…</p>
 
-                    <div id="map" class="map"></div>
+                    <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1JBnfZxPWKgU4CJ77PL38VD6WWX0tXIEg"></iframe>
                     <p class="alt-contact">All sent emails are read regularly at 8AM - 9PM (GMT +8), you can alternatively reach us at our messenger 
                     <a href="https://m.me/jackryanoracoy"><i class="fab fa-facebook-messenger"></i>&nbsp;M.ME/jackryanoracoy</a></p>
                   </div>
@@ -205,24 +205,6 @@
 
     <!-- Contact Form Handler -->
     <script data-cfasync="false" src="../common/js/form-submission-handler.min.js"></script>
-
-    <!-- Google Map -->
-    <script>
-    function initMap() {
-    var myLatLng = {lat: 10.342604, lng: 123.916624};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      center: myLatLng,
-      zoom: 15
-    });
-
-    var marker = new google.maps.Marker({
-      map: map,
-      position: myLatLng,
-      title: 'JACKRO - Cebu City'
-    });
-    }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDho7TRwrmOKBblYR2rMrQ5cxPl2zPv3ds&callback=initMap"></script>
 
     <!-- No Script -->
     <noscript>Please enable JavaScript and revisit (reload) this page.</noscript>

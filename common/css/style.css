@@ -1044,7 +1044,7 @@ textarea {
 }
 
 .font-large {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
 }
 
 /*--------------------------------------------------
@@ -1112,7 +1112,7 @@ textarea {
 
 @media only screen and (min-width: 993px) {
   .site-branding {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color: #F44336;
   }
   .site-branding:hover, .site-branding:visited {
@@ -1298,7 +1298,7 @@ textarea {
 
 @media only screen and (min-width: 993px) {
   .section-title {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 }
 .heading-title {
@@ -1318,7 +1318,7 @@ textarea {
 --------------------------------------------------*/
 .headline-heading {
   color: #FFF;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   letter-spacing: 0.2rem;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
@@ -1326,7 +1326,7 @@ textarea {
 
 @media only screen and (min-width: 993px) {
   .headline-heading {
-    font-size: 2.5rem;
+    font-size: 3.4rem;
   }
 }
 /*--------------------------------------------------
@@ -1348,7 +1348,7 @@ textarea {
 
 @media only screen and (min-width: 993px) {
   .atf-heading {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 }
 /*--------------------------------------------------
@@ -1403,7 +1403,8 @@ textarea {
   text-transform: none;
 }
 .service-info .title-entry {
-  padding: 0 0 10px;
+  margin: 0;
+  padding: 0 0 20px;
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
