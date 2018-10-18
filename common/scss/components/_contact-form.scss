@@ -51,7 +51,16 @@
     & input[type=button],
     & input[type=submit] {
       @include btn;
+      cursor: pointer;
       border: none;
+    }
+
+    & button:disabled:hover,
+    & input[type=button]:disabled:hover,
+    & input[type=submit]:disabled:hover {
+      cursor: auto;
+      opacity: 0.5;
+      box-shadow: none;
     }
     
     & button,
@@ -75,6 +84,12 @@
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
+    }
+
+    & .terms-message {
+      margin: 0 0 20px;
+      color: $grey-500;
+      font-size: $small-size;
     }
 
     & .thankyou-message {
@@ -104,7 +119,17 @@
       padding: 10px 20px;
     }
 
+    & .terms-message,
     & .thankyou-message { margin: 0 0 40px; }
+  }
+}
+
+@media only screen and (max-width: $media-custom-2 ) {
+  .contact-form { 
+    & .submit-container {
+      padding: 0 0 20px;
+      border-bottom: 1px solid $grey-300;
+    }
   }
 }
 

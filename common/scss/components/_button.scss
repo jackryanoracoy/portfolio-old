@@ -111,14 +111,35 @@
 .btn { 
   @include btn;
 
-  &.alt1 {
-    color: $button-text-color-alt-1;
-    background: $button-color-alt-1;
-  }
-
-  &.alt2 { 
+  &.full { 
     width: 100%;
     max-width: 600px;
+  }
+
+  &.small {
+    padding: 0 15px;
+    font-size: $medium-size;
+    line-height: 4rem;
+  }
+
+  &.white {
+    color: $default-color;
+    background: $white;
+  }
+
+  &.red {
+    color: $white;
+    background: $red;
+  }
+
+  &.green {
+    color: $white;
+    background: $green;
+  }
+
+  &.blue {
+    color: $white;
+    background: $blue;
   }
 }
 

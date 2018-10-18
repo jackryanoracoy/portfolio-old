@@ -19,9 +19,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
 
     <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#F44336">
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="theme-color" content="#F44336">
+    
     <meta name="msapplication-TileColor" content="#F44336">
     <meta name="msapplication-TileImage" content="../app-icon/ms-icon-144x144.png">
 
@@ -39,7 +41,8 @@
     <link rel="icon" type="image/png" sizes="96x96" href="../app-icon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../app-icon/favicon-16x16.png">
     <link rel="shortcut icon" href="../app-icon/favicon.ico">
-    <link rel="manifest" href="../app-icon/manifest.json">
+
+    <link rel="manifest" href="../manifest.json">
 
     <link rel="stylesheet" type="text/css" media="all" href="../common/css/style.min.css">
 
@@ -129,19 +132,27 @@
                       <input name="email" type="email" required placeholder="Email Address">
                       <input name="number" type="text" pattern="[0-9]{10}" placeholder="Mobile Number (Optional)">
                       <textarea name="message" required placeholder="Your Message"></textarea>
-                      <div class="submit-container"><button type="submit"><i class="fas fa-paper-plane"></i>&nbsp;Send Email</button></div>
+                      <div class="terms-message">
+                        <input type="checkbox"  onchange="document.getElementById('sendMail').disabled = !this.checked;">
+                        <span>Your read and agreed to our <a href="#">privacy</a> and <a href="#">terms</a>.</span>
+                        <p>Please provide enough details to your inquiry. All fields are required except for field(s) mark as “optional”.</p>
+                      </div>
+                      <div class="submit-container"><button type="submit" id="sendMail" disabled><i class="fas fa-paper-plane"></i>&nbsp;Send Email</button></div>
                     </form>
                   </div>
                   <div class="contact-item content-2">
-                    <p>Design and develop your brand, feel free to contact us.
-                    We'll help you design and develop your website, brand logo, advertisement, and more...</p>
-
-                    <p>Please provide enough details to your inquiry.
-                    All fields are required except for field(s) mark as “optional”. Thank you for reaching us…</p>
-
-                    <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1JBnfZxPWKgU4CJ77PL38VD6WWX0tXIEg"></iframe>
-                    <p class="alt-contact">All sent emails are read regularly at 8AM - 9PM (GMT +8), you can alternatively reach us at our messenger 
-                    <a href="https://m.me/jackryanoracoy"><i class="fab fa-facebook-messenger"></i>&nbsp;M.ME/jackryanoracoy</a></p>
+                    <p><strong>Design and develop your brand</strong>, feel free to contact us. We'll help you design and develop your website, brand logo, advertisement, and more...</p>
+                    <article class="article">
+                      <h3 class="heading-title sub">You can also reach us at:</h3>
+                      <div class="mobile-container">
+                        <a class="btn small blue" href="https://m.me/jackryanoracoy"><i class="fab fa-facebook-messenger"></i>&nbsp;M.ME/jackryanoracoy</a>
+                        <a class="btn small red" href="mailto:jackryanoracoy@gmail.com"><i class="fab fa-facebook-messenger"></i>&nbsp;jackryanoracoy@gmail.com</a>
+                      </div>
+                    </article>
+                    <article class="article">
+                      <h3 class="heading-title sub">You can find our location at:</h3>
+                      <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1JBnfZxPWKgU4CJ77PL38VD6WWX0tXIEg"></iframe>
+                    </article>
                   </div>
                 </div>
               </div>
