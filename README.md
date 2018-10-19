@@ -15,7 +15,14 @@ Graphic Design
 Branding Design  
   
   
-PORTAL  
+ABOUT  
+------------------------------------------------------------  
+JACKRO is a Portfolio that contains all the design and development works of the author.  
+  
+JACKRO is a Progressive Web App (PWA) and is built using the most mature, stable, and powerful professional grade CSS extension language in the world (SASS).   
+  
+  
+SOCIAL  
 ------------------------------------------------------------  
 Github     :   https://github.com/jackryanoracoy  
 Facebook   :   https://facebook.com/JackRyanOracoy  
@@ -24,20 +31,7 @@ Behance    :   https://www.behance.net/jackryanor7dac
 LinkedIn   :   https://www.linkedin.com/in/jackryanoracoy  
   
   
-ABOUT  
-------------------------------------------------------------  
-JACKRO is built using the most mature, stable, and powerful professional grade CSS extension language in the world (SASS).  
-  
-  
-CONTENT  
-------------------------------------------------------------  
-Codebase; HTML5, CSS3, JQuery, SASS.  
-Pagespeed optimized codebase.  
-AppCache (Offline).  
-App icons and favicons.   
-  
-  
-OTHER INFO  
+ADDITIONAL INFORMATION  
 ------------------------------------------------------------  
 Created and Developed by Jack Ryan Oracoy  
   
