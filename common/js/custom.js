@@ -15,20 +15,15 @@ $(document).ready(function($) {
       var scroll = $(window).scrollTop();
       if (scroll > lastScroll + 10) {
         $(".header-section").removeClass("show");
-      }
-      else if (scroll < lastScroll - 10) {
+      } else if (scroll < lastScroll - 10) {
         $(".header-section").addClass("show");
-      }
-      if (scroll >= 100) {
+      } if (scroll >= 100) {
         $(".header-section").addClass("active");
-      } 
-      else {
+      } else {
         $(".header-section").removeClass("active");
-      }
-      if (scroll >= 100) {
+      } if (scroll >= 100) {
         $(".site-cta").addClass("show");
-      } 
-      else {
+      } else {
         $(".site-cta").removeClass("show");
       }
       lastScroll = scroll;

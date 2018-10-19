@@ -1,7 +1,7 @@
 // Helper - Flex Container
 
 /*--------------------------------------------------
-  flex-container, mobile-container
+  flex-container
 --------------------------------------------------*/
 
 @mixin flex-container($extend: true) {
@@ -11,34 +11,31 @@
     & {
       display: flex;
       flex-wrap: wrap;
-      min-width: 100%;
+      max-width: 100%;
     }
-
-    &.nowrap { flex-wrap: nowrap; }
-
-    &.row-reverse { flex-direction: row-reverse; }
-    &.column-reverse { flex-direction: column-reverse; }
-  
-    &.align-start { align-items: flex-start; }
-    &.align-center { align-items: center; }
-    &.align-end { align-items: flex-end; }
-    &.justify-start { justify-content: flex-start; }
-    &.justify-center { justify-content: center; }
-    &.justify-end { justify-content: flex-end; }
-    &.justify-spacearound{ justify-content: space-around; }
-    &.justify-spacebetween { justify-content: space-between; }
-    &.justify-spaceevenly { justify-content: space-evenly; }
   }
 }
 
 %flex-container { @include flex-container($extend: false); }
-
-/*--------------------------------------------------
-  flex-container
---------------------------------------------------*/
   
 .flex-container {
   @include flex-container;
+
+
+  &.nowrap { flex-wrap: nowrap; }
+
+  &.row-reverse { flex-direction: row-reverse; }
+  &.column-reverse { flex-direction: column-reverse; }
+
+  &.align-start { align-items: flex-start; }
+  &.align-center { align-items: center; }
+  &.align-end { align-items: flex-end; }
+  &.justify-start { justify-content: flex-start; }
+  &.justify-center { justify-content: center; }
+  &.justify-end { justify-content: flex-end; }
+  &.justify-spacearound{ justify-content: space-around; }
+  &.justify-spacebetween { justify-content: space-between; }
+  &.justify-spaceevenly { justify-content: space-evenly; }
 
   &.pad10 { padding: 10px; }
   &.pad20 { padding: 20px; }
@@ -60,12 +57,50 @@
 }
 
 /*--------------------------------------------------
-  mobile-container
+  flex-container - Column
 --------------------------------------------------*/
 
-.mobile-container {
-  @include flex-container;
-  margin: -10px;
+@each $column-width in $col-width-list {
+  $i: index($col-width-list, $column-width);
 
-  & a { margin: 10px; }
+  .flex-container { 
+    .flex-content {
+      &.xs#{$i} { width: nth($col-width-list, $i); }
+    }
+  }
+}
+
+@media (min-width: $media-small + 1) {
+  @each $column-width in $col-width-list {
+    $i: index($col-width-list, $column-width);
+    .flex-container {
+      .flex-content {
+        &.s#{$i} { width: nth($col-width-list, $i); }
+      }
+    }
+  }
+}
+
+@media (min-width: $media-medium + 1) {
+  @each $column-width in $col-width-list {
+    $i: index($col-width-list, $column-width);
+
+    .flex-container {
+      .flex-content {
+        &.m#{$i} { width: nth($col-width-list, $i); }
+      }
+    }
+  }
+}
+
+@media (min-width: $media-large + 1) {
+  @each $column-width in $col-width-list {
+    $i: index($col-width-list, $column-width);
+
+    .flex-container {
+      .flex-content {
+        &.l#{$i} { width: nth($col-width-list, $i); }
+      }
+    }
+  }
 }
