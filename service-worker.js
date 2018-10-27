@@ -31,18 +31,6 @@ var precacheFiles = [
 	'common/font-awesome/webfonts/fa-solid-900.woff',
 	'common/font-awesome/webfonts/fa-solid-900.woff2',
 
-	'common/fonts/Roboto/Roboto-Black.ttf',
-	'common/fonts/Roboto/Roboto-Bold.ttf',
-	'common/fonts/Roboto/Roboto-Italic.ttf',
-	'common/fonts/Roboto/Roboto-Light.ttf',
-	'common/fonts/Roboto/Roboto-Medium.ttf',
-	'common/fonts/Roboto/Roboto-Regular.ttf',
-	'common/fonts/Roboto/Roboto-Thin.ttf',
-	'common/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf',
-	'common/fonts/Roboto_Condensed/RobotoCondensed-Italic.ttf',
-	'common/fonts/Roboto_Condensed/RobotoCondensed-Light.ttf',
-	'common/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf',
-
 	'common/img/background-image-placeholder.png',
 	'common/img/logo-branding.png',
 	'common/img/logo-footer.png',
