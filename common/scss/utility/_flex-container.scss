@@ -22,8 +22,8 @@
 .flex-container {
   @include flex-container;
 
-  &.gap { margin: -10px; }
-  &.gap > div { padding: 10px; }
+  &.gap { margin: -5px; }
+  &.gap > * { margin: 5px; }
 
   &.nowrap { flex-wrap: nowrap; }
 
@@ -62,8 +62,8 @@
 @media only screen and (min-width: $media-medium + 1) {
   .flex-container {
 
-    &.gap { margin: -20px; }
-    &.gap > div { padding: 20px; }
+    &.gap { margin: -10px; }
+    &.gap > * { margin: 10px; }
 
     & > div { padding: 0; }
 
