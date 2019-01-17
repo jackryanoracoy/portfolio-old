@@ -814,3 +814,44 @@
 @media only screen and (min-width: $media-medium + 1) {
   .map { height: 300px; }
 }
+
+/*--------------------------------------------------
+  cookie-consent
+--------------------------------------------------*/
+
+.cookie-consent {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 20px;
+  color: $white;
+  font-size: $small-size;
+  background-color: rgba($color: $grey-900, $alpha: 0.85);
+  border-radius: $card-radius;
+  box-shadow: $z-depth-1;
+  z-index: 99;
+
+  & .close-cookie-consent,
+  & .accept-cookie-consent {
+    font-size: $medium-size;
+    cursor: pointer;
+  }
+
+  & .close-cookie-consent {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    color: $grey-500;
+  }
+}
+
+@media only screen and (min-width: $media-medium + 1) {
+  .cookie-consent {
+    width: calc(100% - 40px);
+    max-width: 500px;
+    margin: 20px;
+  }
+}

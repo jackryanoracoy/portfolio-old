@@ -69,3 +69,13 @@ function handleFirstTab(e) {
   }
 }
 window.addEventListener('keydown', handleFirstTab);
+
+// Cookie consent
+$(document).ready(function(){   
+  setTimeout(function () {
+    $(".cookie-consent").fadeIn(200);
+  }, 4000);
+  $(".close-cookie-consent, .accept-cookie-consent").click(function() {
+    $(".cookie-consent").fadeOut(200);
+  }); 
+}); 

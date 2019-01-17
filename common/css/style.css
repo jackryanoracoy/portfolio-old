@@ -1880,6 +1880,42 @@ section:last-child .button-holder {
   }
 }
 /*--------------------------------------------------
+  cookie-consent
+--------------------------------------------------*/
+.cookie-consent {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 20px;
+  color: #FFF;
+  font-size: 1.2rem;
+  background-color: rgba(33, 33, 33, 0.85);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  z-index: 99;
+}
+.cookie-consent .close-cookie-consent, .cookie-consent .accept-cookie-consent {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.cookie-consent .close-cookie-consent {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  color: #999999;
+}
+
+@media only screen and (min-width: 993px) {
+  .cookie-consent {
+    width: calc(100% - 40px);
+    max-width: 500px;
+    margin: 20px;
+  }
+}
+/*--------------------------------------------------
   Carousel - Core
 --------------------------------------------------*/
 .carousel {
