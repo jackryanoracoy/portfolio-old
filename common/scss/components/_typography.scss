@@ -23,7 +23,7 @@
   @include title;
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .section-title {
     font-size: $extra-large-size;
   }
@@ -56,7 +56,7 @@
   white-space: nowrap;
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .headline-heading {
     font-size: $super-large-size;
   }
@@ -82,7 +82,7 @@
   }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .atf-heading {
     font-size: $extra-large-size;
   }
@@ -100,7 +100,7 @@
   line-height: $small-height;
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .atf-text {
     font-size: $default-size;
   }
@@ -156,7 +156,7 @@
   }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .service-info {
   
     & .title-entry {
@@ -219,7 +219,7 @@
   & a { text-decoration: none; }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .footer-text {
     font-size: $small-size;
   }

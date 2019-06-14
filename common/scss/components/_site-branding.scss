@@ -50,7 +50,7 @@
 
 .site-branding { @include site-branding; }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .site-branding { 
     font-size: $extra-large-size;
     color: $primary-color;
@@ -64,7 +64,7 @@
   }
 }
 
-@media only screen and (max-width: $media-medium) {
+@media (max-width: $media-medium) {
   .site-branding {
     & h1, h5 { padding: 0; }
     & h1 small, h5 small { display: none; }

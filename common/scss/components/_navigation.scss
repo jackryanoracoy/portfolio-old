@@ -93,13 +93,13 @@
   & a.be:hover { color: #0057ff; }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .social-nav {
     margin: 0 10px;
   }
 }
 
-@media only screen and (max-width: $media-medium) {
+@media (max-width: $media-medium) {
   .main-nav { 
     flex-wrap: wrap;
     padding: 10px 0;

@@ -129,21 +129,21 @@
 
   &.red {
     color: $white;
-    background: $red;
+    background: $red-500;
   }
 
   &.green {
     color: $white;
-    background: $green;
+    background: $green-500;
   }
 
   &.blue {
     color: $white;
-    background: $blue;
+    background: $blue-500;
   }
 }
 
-@media only screen and (max-width: $media-medium) {
+@media (max-width: $media-medium) {
   .btn.cta { 
     width: 50px;
     height: 50px;

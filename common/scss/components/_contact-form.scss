@@ -39,7 +39,7 @@
     & input[type=text],
     & input[type=email],
     & input[type=number] {
-      margin: 0 0 20px;
+      margin: 0 0 10px;
       padding: 10px;
       font-size: $default-size;
       font-family: inherit;
@@ -87,17 +87,17 @@
     }
 
     & .terms-message {
-      margin: 0 0 20px;
+      margin: 0 0 10px;
       color: $grey-500;
       font-size: $small-size;
     }
 
     & .thankyou-message {
-      margin: 0 0 20px;
+      margin: 0 0 10px;
       padding: 15px 20px 15px 40px;
       color: $white;
       text-indent: -0.95rem;
-      background-color: $green;
+      background-color: $green-500;
       border: $card-border;
       border-radius: $card-radius;
     }
@@ -110,21 +110,21 @@
 
 .contact-form { @include contact-form; }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .contact-form { 
     & textarea,
     & input[type=text],
     & input[type=email] {
-      margin: 0 0 40px;
+      margin: 0 0 20px;
       padding: 10px 20px;
     }
 
     & .terms-message,
-    & .thankyou-message { margin: 0 0 40px; }
+    & .thankyou-message { margin: 0 0 20px; }
   }
 }
 
-@media only screen and (max-width: $media-custom-2 ) {
+@media (max-width: $media-custom-2 ) {
   .contact-form { 
     & .submit-container {
       padding: 0 0 20px;

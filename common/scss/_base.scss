@@ -77,17 +77,10 @@ a {
 --------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 40px;
   font-weight: bold;
   line-height: 1.15;
 
   & a { font-weight: inherit; }
-}
-
-p {
-  margin: 0 0 20px;
-
-  &:last-child { margin: 0; }
 }
 
 em { font-style: italic; }

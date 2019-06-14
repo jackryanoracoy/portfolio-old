@@ -4,11 +4,11 @@
   Display according to viewport
 --------------------------------------------------*/
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .mobile { display: none !important; }
 }
 
-@media only screen and (max-width: $media-medium) {
+@media (max-width: $media-medium) {
   .desktop { display: none !important; }
 }
 
@@ -31,14 +31,95 @@
 .font-small { font-size: $small-size; }
 .font-medium { font-size: $medium-size; }
 .font-large { font-size: $large-size; }
-.font-large { font-size: $extra-large-size; }
-
+.font-xlarge { font-size: $extra-large-size; }
 
 /*--------------------------------------------------
-  Z-depth
+  Gutter
+--------------------------------------------------*/
+
+.gutter {
+  &.top10 { margin-top: 10px !important; }
+  &.top20 { margin-top: 20px !important; }
+  &.top30 { margin-top: 30px !important; }
+  &.top40 { margin-top: 40px !important; }
+  &.top50 { margin-top: 50px !important; }
+  &.top60 { margin-top: 60px !important; }
+  &.top70 { margin-top: 70px !important; }
+  &.top80 { margin-top: 80px !important; }
+  &.top90 { margin-top: 90px !important; }
+  &.top100 { margin-top: 100px !important; }
+
+  &.bot10 { margin-bottom: 10px !important; }
+  &.bot20 { margin-bottom: 20px !important; }
+  &.bot30 { margin-bottom: 30px !important; }
+  &.bot40 { margin-bottom: 40px !important; }
+  &.bot50 { margin-bottom: 50px !important; }
+  &.bot60 { margin-bottom: 60px !important; }
+  &.bot70 { margin-bottom: 70px !important; }
+  &.bot80 { margin-bottom: 80px !important; }
+  &.bot90 { margin-bottom: 90px !important; }
+  &.bot100 { margin-bottom: 100px !important; }
+}
+
+@media (min-width: $media-medium + 1) {
+  .gutter {  
+    &.desktop-top10 { margin-top: 10px !important; }
+    &.desktop-top20 { margin-top: 20px !important; }
+    &.desktop-top30 { margin-top: 30px !important; }
+    &.desktop-top40 { margin-top: 40px !important; }
+    &.desktop-top50 { margin-top: 50px !important; }
+    &.desktop-top60 { margin-top: 60px !important; }
+    &.desktop-top70 { margin-top: 70px !important; }
+    &.desktop-top80 { margin-top: 80px !important; }
+    &.desktop-top90 { margin-top: 90px !important; }
+    &.desktop-top100 { margin-top: 100px !important; }
+  
+    &.desktop-bot10 { margin-bottom: 10px !important; }
+    &.desktop-bot20 { margin-bottom: 20px !important; }
+    &.desktop-bot30 { margin-bottom: 30px !important; }
+    &.desktop-bot40 { margin-bottom: 40px !important; }
+    &.desktop-bot50 { margin-bottom: 50px !important; }
+    &.desktop-bot60 { margin-bottom: 60px !important; }
+    &.desktop-bot70 { margin-bottom: 70px !important; }
+    &.desktop-bot80 { margin-bottom: 80px !important; }
+    &.desktop-bot90 { margin-bottom: 90px !important; }
+    &.desktop-bot100 { margin-bottom: 100px !important; }
+  }
+}
+
+@media (max-width: $media-medium) {
+  .gutter {
+    &.mobile-top10 { margin-top: 10px !important; }
+    &.mobile-top20 { margin-top: 20px !important; }
+    &.mobile-top30 { margin-top: 30px !important; }
+    &.mobile-top40 { margin-top: 40px !important; }
+    &.mobile-top50 { margin-top: 50px !important; }
+    &.mobile-top60 { margin-top: 60px !important; }
+    &.mobile-top70 { margin-top: 70px !important; }
+    &.mobile-top80 { margin-top: 80px !important; }
+    &.mobile-top90 { margin-top: 90px !important; }
+    &.mobile-top100 { margin-top: 100px !important; }
+  
+    &.mobile-bot10 { margin-bottom: 10px !important; }
+    &.mobile-bot20 { margin-bottom: 20px !important; }
+    &.mobile-bot30 { margin-bottom: 30px !important; }
+    &.mobile-bot40 { margin-bottom: 40px !important; }
+    &.mobile-bot50 { margin-bottom: 50px !important; }
+    &.mobile-bot60 { margin-bottom: 60px !important; }
+    &.mobile-bot70 { margin-bottom: 70px !important; }
+    &.mobile-bot80 { margin-bottom: 80px !important; }
+    &.mobile-bot90 { margin-bottom: 90px !important; }
+    &.mobile-bot100 { margin-bottom: 100px !important; }
+  }
+}
+
+/*--------------------------------------------------
+  z-depth
 --------------------------------------------------*/
 
 .z-depth { box-shadow: $z-depth; }
+.z-depth-1 { box-shadow: $z-depth-1; }
+
 
 /*--------------------------------------------------
   Filter

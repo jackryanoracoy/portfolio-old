@@ -22,7 +22,7 @@
   z-index: 9;
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .header-section {
     height: $header-height + $navigation-height;
 
@@ -31,7 +31,7 @@
   }
 }
 
-@media only screen and (max-width: $media-medium) {
+@media (max-width: $media-medium) {
   .header-section {
     &.active { top: -$header-height; }
     &.active.show,
@@ -57,7 +57,7 @@
   z-index: 1;
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .site-header { 
     position: absolute;
     top: 0;
@@ -67,11 +67,11 @@
   }
 }
 
-@media only screen and (min-width: $media-large + 1) {
+@media (min-width: $media-large + 1) {
   .site-header { padding: 0 20px; }
 }
 
-@media only screen and (min-width: $media-custom-1 + 1) {
+@media (min-width: $media-custom-1 + 1) {
   .site-header { padding: 0 40px; }
 }
 
@@ -85,13 +85,13 @@
   & a { margin: 0 5px; }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .site-cta { 
     & a { margin: 0 10px; }
   }
 }
 
-@media only screen and (max-width: $media-medium) {
+@media (max-width: $media-medium) {
   .site-cta {
     position: fixed;
     bottom: -50px;
@@ -125,7 +125,7 @@
   }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .site-navigation {
     position: absolute;
     bottom: 0;
@@ -144,21 +144,21 @@
   }
 }
 
-@media only screen and (max-width: $media-medium) {
+@media (max-width: $media-medium) {
   .site-navigation {
     & ul { width: 100%; }
   }
 }
 
-@media only screen and (min-width: $media-large + 1) {
+@media (min-width: $media-large + 1) {
   .site-navigation { padding: 0 20px; }
 }
 
-@media only screen and (min-width: $media-custom-1 + 1) {
+@media (min-width: $media-custom-1 + 1) {
   .site-navigation { padding: 0 40px; }
 }
 
-@media only screen and (max-width: $media-large) {
+@media (max-width: $media-large) {
   .site-navigation {
     & ul:nth-child(2) { display: none; }
   }
@@ -225,14 +225,14 @@
   }
 }
 
-@media only screen and (min-width: $media-xsmall + 1) {
+@media (min-width: $media-xsmall + 1) {
   .site-atf {
     & .atf-about { width: 200px; }
     & .atf-illus { width: calc(100% - 200px); }
   }
 }
 
-@media only screen and (min-width: $media-small + 1) {
+@media (min-width: $media-small + 1) {
   .site-atf {
     & .atf-about { width: 300px; }
     & .atf-illus {
@@ -243,7 +243,7 @@
   }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .site-atf {
     height: $header-height + $navigation-height + 500px;
     padding: $header-height + $navigation-height 20px 0;
@@ -261,13 +261,13 @@
   }
 }
 
-@media only screen and (min-width: $media-large + 1) {
+@media (min-width: $media-large + 1) {
   .site-atf {
     padding: $header-height + $navigation-height 30px 0;
   }
 }
 
-@media only screen and (min-width: $media-custom-1 + 1) {
+@media (min-width: $media-custom-1 + 1) {
   .site-atf {
     padding: $header-height + $navigation-height 50px 0;
 
@@ -302,20 +302,20 @@
   }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .site-headline {
     height: $header-height + $navigation-height + 150px;
     padding: $header-height + $navigation-height 20px 0;
   }
 }
 
-@media only screen and (min-width: $media-large + 1) {
+@media (min-width: $media-large + 1) {
   .site-headline {
     padding: $header-height + $navigation-height 30px 0;
   }
 }
 
-@media only screen and (min-width: $media-custom-1 + 1) {
+@media (min-width: $media-custom-1 + 1) {
   .site-headline {
     padding: $header-height + $navigation-height 50px 0;
   }
@@ -330,7 +330,7 @@
   padding: 20px 0 0;
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .site-aside { padding: 50px 0 0; }
 }
 
@@ -353,7 +353,7 @@
    & > div { padding: 25px 0; }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .site-main { 
     & > div { padding: 50px 0; }
   }
@@ -379,11 +379,11 @@
   }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .section { padding: 50px 20px; }
 }
 
-@media only screen and (min-width: $media-large + 1) {
+@media (min-width: $media-large + 1) {
   .section { padding: 50px 30px; }
 }
 
@@ -393,7 +393,7 @@
 
 .article { padding: 20px 0 0; }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .article { padding: 40px 0 0; }
 }
 
@@ -410,7 +410,7 @@
   &.center { justify-content: center; }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .title-bar { margin: 0 0 40px; }
 }
 
@@ -446,11 +446,11 @@
   }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .title-bar-invisible { padding: 0 20px 20px; }
 }
 
-@media only screen and (min-width: $media-large + 1) {
+@media (min-width: $media-large + 1) {
   .title-bar-invisible { padding: 0 30px 20px; }
 }
 
@@ -520,21 +520,21 @@
   }
 }
 
-@media only screen and (min-width: $media-xsmall + 1) {
+@media (min-width: $media-xsmall + 1) {
   .portfolio-items {
     &.first-feat .portfolio-item:first-child { width: 100%; }
     & .portfolio-item { width: 50%; }
   }
 }
 
-@media only screen and (min-width: $media-small + 1) {
+@media (min-width: $media-small + 1) {
   .portfolio-items {
     &.first-feat .portfolio-item:first-child { width: 66.66%; }
     & .portfolio-item { width: 33.33%; }
   }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .portfolio-items {
     overflow: hidden;
 
@@ -551,7 +551,7 @@
   }
 }
 
-@media only screen and (min-width: $media-large + 1) {
+@media (min-width: $media-large + 1) {
   .portfolio-items {
     &.first-feat .portfolio-item:first-child { width: 40%; }
     & .portfolio-item { width: 20%; }
@@ -627,7 +627,7 @@
   }
 }
 
-@media only screen and (min-width: $media-custom-2 + 1) {
+@media (min-width: $media-custom-2 + 1) {
   .service-items {
     & .service-item {
       width: 33.33%;
@@ -637,7 +637,7 @@
   }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .service-items {
     & .service-item {
       min-height: auto;
@@ -670,7 +670,7 @@
   }
 }
 
-@media only screen and (min-width: $media-custom-2 + 1) {
+@media (min-width: $media-custom-2 + 1) {
   .contact-items {
     & .contact-item {
       width: 50%;
@@ -681,7 +681,7 @@
   }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .contact-items {
     & .contact-item {
       &.content-1 { width: calc(100% - 520px); }
@@ -713,7 +713,7 @@
   & .footer-item .footer-logo { width: 75px; }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .footer-items { 
     & .footer-item {
       width: 33.33%;
@@ -767,7 +767,7 @@
   & img { max-width: 100%; }
 }
 
-@media only screen and (min-width: $media-small + 1) {
+@media (min-width: $media-small + 1) {
   .illus-container {
     width: calc(100% - 20px);
     margin: 0 0 0 auto;
@@ -783,7 +783,6 @@
   height: 200px;
   margin: 5px;
   background-color: $grey-100;
-  border-radius: 50%;
   overflow: hidden;
   box-shadow: $z-depth;
 
@@ -793,6 +792,12 @@
   }
 
   & img { max-width: 100%; }
+}
+
+@media (min-width: $media-medium + 1) {
+  .profile-picture {
+    border-radius: 50%;
+  }
 }
 
 /*--------------------------------------------------
@@ -807,11 +812,11 @@
   border: 1px solid $grey-100;
 }
 
-@media only screen and (min-width: $media-custom-2 + 1) {
+@media (min-width: $media-custom-2 + 1) {
   .map { height: 200px; }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .map { height: 300px; }
 }
 
@@ -848,7 +853,7 @@
   }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .cookie-consent {
     width: calc(100% - 40px);
     max-width: 500px;

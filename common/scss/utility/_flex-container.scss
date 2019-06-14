@@ -59,7 +59,7 @@
   &.hpad50 { padding: 0 50px; }
 }
 
-@media only screen and (min-width: $media-medium + 1) {
+@media (min-width: $media-medium + 1) {
   .flex-container {
 
     &.gap { margin: -10px; }
@@ -82,7 +82,7 @@
   }
 }
 
-@media only screen and (max-width: $media-medium) {
+@media (max-width: $media-medium) {
   .flex-container {
 
     &.row-reverse-mobile { flex-direction: row-reverse; }
